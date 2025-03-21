@@ -1,0 +1,29 @@
+{
+    "services": [
+      {
+        "title": "Motorcycle Sales",
+        "description": "Find the latest motorcycles from leading brands with special offers and financing options available.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/home-banner-monkey-1366x573-tr-2-13022025-060002.jpg",
+        "alt_text": "Motorcycle Sales",
+        "button_text": "Shop Now",
+        "button_link": "products.html"
+      },
+      {
+        "title": "Service & Maintenance",
+        "description": "Keep your motorcycle in top condition with our expert servicing, maintenance, and repairs.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/website-banner-gtc-04032024-044009.jpg",
+        "alt_text": "Service & Maintenance",
+        "button_text": "Book Service",
+        "button_link": "#"
+      },
+      {
+        "title": "Spare Parts",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      }
+    ]
+  }
+  

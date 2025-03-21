@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Custom Video Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper JS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Section Video with Custom Swiper -->
+    <section class="bg-white py-10">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-5">Tonton Video Kami</h2>
+        <!-- Custom Swiper container -->
+        <div class="swiper myCustomVideoSwiper">
+          <div class="swiper-wrapper" id="custom-video-cards">
+            <!-- Video Cards will be populated here -->
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination custom-video-swiper-pagination"></div>
+          <!-- Add Navigation Buttons -->
+          <div class="swiper-button-next custom-video-swiper-next"></div>
+          <div class="swiper-button-prev custom-video-swiper-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      // Initialize custom Swiper for videos
+      const customVideoSwiper = new Swiper(".myCustomVideoSwiper", {
+        loop: true,
+        slidesPerView: 3, // Show 3 video cards per slide
+        spaceBetween: 30, // Space between cards
+        pagination: {
+          el: ".custom-video-swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".custom-video-swiper-next",
+          prevEl: ".custom-video-swiper-prev",
+        },
+      });
+
+      // Fetch the video data from video.json
+      fetch("video.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const videoCardsContainer =
+            document.getElementById("custom-video-cards");
+
+          // Loop through the JSON data and create cards
+          data.forEach((video) => {
+            const videoCard = `
+              <div class="swiper-slide">
+                <div class="bg-white shadow-lg rounded-lg p-4">
+                  <iframe
+                    class="rounded-lg"
+                    width="100%"
+                    height="315"
+                    src="${video.videoUrl}"
+                    title="${video.title}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                  <h3 class="text-lg font-semibold mt-4">${video.title}</h3>
+                </div>
+              </div>
+            `;
+            videoCardsContainer.innerHTML += videoCard;
+          });
+
+          // After the content is added, refresh Swiper
+          customVideoSwiper.update();
+        })
+        .catch((error) => console.error("Error fetching video data:", error));
+    </script>
+  </body>
+</html>

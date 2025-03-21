@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Harika Prima Sakti - Motorcycle Dealer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-red-600 text-white py-4 shadow-md relative z-10">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">Harika Motor</h1>
+        <nav>
+          <ul class="flex space-x-1">
+            <li>
+              <a
+                href="index.html"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="products.html"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                >Promotions</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                href="#"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                id="dealers-btn"
+                >Dealers</a
+              >
+              <ul
+                id="dealers-menu"
+                class="absolute left-0 hidden bg-white text-black mt-2 space-y-2 p-2 shadow-lg w-60"
+              >
+                <li>
+                  <a
+                    href="https://g.co/kgs/DX3jJqb"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Harika Motor Bekasi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://g.co/kgs/ZuwkWct"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Harika Motor Bogor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://g.co/kgs/oBzjSNB"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Harika Motor Karawang</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                href="#"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                id="after-sales-btn"
+                >After Sales</a
+              >
+              <ul
+                id="after-sales-menu"
+                class="absolute left-0 hidden bg-white text-black mt-2 space-y-2 p-2 shadow-lg w-60"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Honda Genuine Parts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >HGP Tires</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >AHM Oil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Accessories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Apparel</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                href="#"
+                class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                id="corporate-btn"
+                >Corporate</a
+              >
+              <ul
+                id="corporate-menu"
+                class="absolute left-0 hidden bg-white text-black mt-2 space-y-2 p-2 shadow-lg"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Sustainability</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="careers.html"
+                    class="bg-white hover:bg-gray-300 hover:text-white block px-4 py-2"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      // Fungsi untuk toggle dropdown
+      function toggleDropdown(buttonId, menuId) {
+        const button = document.getElementById(buttonId);
+        const menu = document.getElementById(menuId);
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          // Menutup dropdown lainnya jika terbuka
+          document.querySelectorAll('ul[id$="-menu"]').forEach((el) => {
+            if (el !== menu) el.classList.add("hidden");
+          });
+          // Menampilkan/menyembunyikan dropdown yang di-*klik*
+          menu.classList.toggle("hidden");
+        });
+      }
+
+      // Memanggil fungsi untuk setiap tombol dropdown
+      toggleDropdown("dealers-btn", "dealers-menu");
+      toggleDropdown("after-sales-btn", "after-sales-menu");
+      toggleDropdown("corporate-btn", "corporate-menu");
+
+      // Klik di luar untuk menutup dropdown
+      window.addEventListener("click", function (e) {
+        if (!e.target.matches("a") && !e.target.closest("ul")) {
+          document
+            .querySelectorAll('ul[id$="-menu"]')
+            .forEach((el) => el.classList.add("hidden"));
+        }
+      });
+    </script>
+    <!-- Swiper Hero Section -->
+    <section class="relative bg-cover bg-center">
+      <!-- Swiper -->
+      <div class="swiper-container h-full">
+        <div class="swiper-wrapper" id="carousel"></div>
+        <!-- Pagination (optional) -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation buttons (optional) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <script>
+      // Fetch banner data from banner.json
+      fetch("banner.json")
+        .then((response) => response.json())
+        .then((bannerData) => {
+          const carousel = document.getElementById("carousel");
+          let slides = "";
+
+          bannerData.forEach((banner) => {
+            slides += `
+          <div class="swiper-slide h-screen flex justify-center items-center">
+            <img src="${banner.src}" alt="${banner.alt}" class="w-full h-full object-contain" />
+          </div>`;
+          });
+
+          // Insert slides into the swiper-wrapper
+          carousel.innerHTML = slides;
+
+          // Initialize Swiper after loading slides
+          const swiper = new Swiper(".swiper-container", {
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+          });
+        })
+        .catch((error) => console.error("Error loading banner data:", error));
+    </script>
+
+    <!-- Section Pilih Honda Favorit Anda -->
+    <section class="bg-white py-10">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-5">
+          Pilih Honda Favorit Anda
+        </h2>
+
+        <!-- Small Navbar for Honda Categories -->
+        <nav class="rounded-lg">
+          <ul class="flex justify-center space-x-6" id="honda-categories">
+            <li>
+              <a
+                href="#"
+                data-category="matic"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Matic</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="sport"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Sport</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="cub"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Cub</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="ev"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >EV</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="Bigbike"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Bigbike</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          id="product-list"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Produk akan dimuat di sini melalui JavaScript -->
+        </div>
+        <!-- Tombol View More -->
+        <button
+          id="view-more-btn"
+          class="bg-red-500 text-white px-6 py-2 mt-4 rounded hover:bg-red-600 hidden"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+
+    <script>
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const productList = document.getElementById("product-list");
+          const categoryLinks = document.querySelectorAll(
+            "#honda-categories a"
+          );
+          const viewMoreBtn = document.getElementById("view-more-btn");
+
+          let displayedProducts = 6; // Jumlah produk yang ditampilkan awal
+          let currentCategory = "All"; // Menyimpan kategori saat ini
+
+          // Tampilkan 6 produk awal
+          displayProducts(data.products.slice(0, displayedProducts));
+
+          // Fungsi untuk memfilter produk berdasarkan kategori
+          categoryLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+              event.preventDefault();
+              displayedProducts = 6; // Reset jumlah produk yang ditampilkan
+              viewMoreBtn.classList.remove("hidden"); // Tampilkan tombol View More lagi
+
+              // Hapus 'active' class dari semua link
+              categoryLinks.forEach((el) => {
+                el.classList.remove("text-gray-900", "font-bold");
+                el.classList.add("text-gray-600");
+              });
+
+              // Tambah 'active' class ke link yang diklik
+              link.classList.remove("text-gray-600");
+              link.classList.add("text-gray-900", "font-bold");
+
+              currentCategory = link.getAttribute("data-category");
+              filterProductsByCategory(currentCategory);
+            });
+          });
+
+          // Fungsi untuk filter produk
+          function filterProductsByCategory(category) {
+            if (category === "All") {
+              displayProducts(data.products.slice(0, displayedProducts));
+            } else {
+              const filteredProducts = data.products.filter(
+                (product) => product.category === category
+              );
+              displayProducts(filteredProducts.slice(0, displayedProducts));
+            }
+          }
+
+          // Fungsi untuk menampilkan produk
+          function displayProducts(products) {
+            productList.innerHTML = ""; // Bersihkan produk sebelumnya
+            products.forEach((product) => {
+              const productCard = document.createElement("div");
+              productCard.classList.add(
+                "bg-white",
+                "p-6",
+                "rounded-lg",
+                "shadow-lg"
+              );
+
+              const productImage = document.createElement("img");
+              productImage.src = product.image;
+              productImage.alt = product.name;
+              productImage.classList.add(
+                "w-full",
+                "h-48",
+                "object-cover",
+                "mb-4",
+                "rounded"
+              );
+              productCard.appendChild(productImage);
+
+              const productName = document.createElement("h3");
+              productName.classList.add("text-xl", "font-bold", "mb-2");
+              productName.textContent = product.name;
+              productCard.appendChild(productName);
+
+              const productPrice = document.createElement("p");
+              productPrice.classList.add("text-sm", "text-gray-700", "mb-2");
+              productPrice.textContent = `Rp ${product.price.toLocaleString()}`;
+              productCard.appendChild(productPrice);
+
+              const ratingStars = document.createElement("div");
+              ratingStars.classList.add("flex", "items-center", "mb-4");
+              for (let i = 0; i < product.rating; i++) {
+                const star = document.createElement("i");
+                star.classList.add("fas", "fa-star", "text-yellow-500", "mr-1");
+                ratingStars.appendChild(star);
+              }
+              for (let i = product.rating; i < 5; i++) {
+                const emptyStar = document.createElement("i");
+                emptyStar.classList.add(
+                  "far",
+                  "fa-star",
+                  "text-yellow-500",
+                  "mr-1"
+                );
+                ratingStars.appendChild(emptyStar);
+              }
+              productCard.appendChild(ratingStars);
+
+              const buyButton = document.createElement("button");
+              buyButton.classList.add(
+                "bg-red-500",
+                "text-white",
+                "px-4",
+                "py-2",
+                "rounded",
+                "mt-4",
+                "hover:bg-red-600"
+              );
+              buyButton.textContent = "Beli Sekarang";
+              buyButton.addEventListener("click", () => {
+                alert(`Anda membeli ${product.name}!`);
+              });
+              productCard.appendChild(buyButton);
+
+              productList.appendChild(productCard);
+            });
+
+            // Tampilkan tombol View More jika ada lebih banyak produk
+            if (products.length === displayedProducts) {
+              viewMoreBtn.classList.remove("hidden");
+            } else {
+              viewMoreBtn.classList.add("hidden");
+            }
+          }
+
+          // Fungsi untuk View More produk
+          viewMoreBtn.addEventListener("click", () => {
+            displayedProducts += 6; // Tambah 6 produk lagi
+            filterProductsByCategory(currentCategory); // Tampilkan produk sesuai kategori
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching product data:", error);
+        });
+    </script>
+    <!-- Section: Motorcycle Sales, Service & Maintenance, Spare Parts -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div
+          id="services-container"
+          class="grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
+          <!-- Cards will be injected here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Memuat data services dari JSON
+      fetch("services.json")
+        .then((response) => response.json())
+        .then((servicesData) => {
+          const servicesContainer =
+            document.getElementById("services-container");
+
+          // Loop melalui setiap service dan buat card dinamis
+          servicesData.services.forEach((service) => {
+            const serviceCard = document.createElement("div");
+            serviceCard.classList.add(
+              "bg-white",
+              "p-6",
+              "rounded-lg",
+              "shadow-lg"
+            );
+
+            // Buat konten HTML untuk setiap card service
+            serviceCard.innerHTML = `
+            <img src="${service.image_url}" alt="${service.alt_text}" class="w-full h-auto rounded-lg" />
+            <h3 class="text-2xl font-bold mt-4">${service.title}</h3>
+            <p class="mt-2 text-gray-600">${service.description}</p>
+            <a href="${service.button_link}" class="mt-4 inline-block bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition">${service.button_text}</a>
+          `;
+
+            // Tambahkan card ke dalam container
+            servicesContainer.appendChild(serviceCard);
+          });
+        })
+        .catch((error) =>
+          console.error("Error fetching services data:", error)
+        );
+    </script>
+
+    <!-- Section: Dealer Locations -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Dealer Locations</h2>
+        <div
+          id="dealer-container"
+          class="grid grid-cols-1 md:grid-cols-3 gap-6"
+        ></div>
+      </div>
+    </section>
+
+    <!-- JavaScript di dalam HTML -->
+    <script>
+      // Memuat data dealer dari JSON
+      fetch("dealer.json")
+        .then((response) => response.json())
+        .then((dealers) => {
+          const dealerContainer = document.getElementById("dealer-container");
+
+          // Loop melalui setiap dealer dan buat card dinamis
+          dealers.forEach((dealer) => {
+            const dealerCard = document.createElement("div");
+            dealerCard.classList.add(
+              "bg-white",
+              "p-6",
+              "rounded-lg",
+              "shadow-lg"
+            );
+
+            // Buat konten HTML untuk setiap card dealer
+            dealerCard.innerHTML = `
+            <img src="${dealer.image}" alt="${dealer.name}" class="w-full h-auto rounded-lg" />
+            <h3 class="text-2xl font-bold mt-4">${dealer.name}</h3>
+            <p class="mt-2 text-gray-600">${dealer.address}</p>
+            <a href="${dealer.link}" class="mt-4 inline-block bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition">View Location</a>
+          `;
+
+            // Tambahkan card ke dalam container
+            dealerContainer.appendChild(dealerCard);
+          });
+        })
+        .catch((error) => console.error("Error fetching dealer data:", error));
+    </script>
+
+    <!-- Section: Partners -->
+    <section class="py-12">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Partners</h2>
+        <div
+          id="partners-container"
+          class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center"
+        >
+          <!-- Partner logos will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Fetch the partners data from a JSON file
+      fetch("partners.json")
+        .then((response) => response.json())
+        .then((partnerships) => {
+          const container = document.getElementById("partners-container");
+
+          partnerships.forEach((partner) => {
+            const partnerDiv = document.createElement("div");
+            partnerDiv.classList.add("flex", "justify-center");
+
+            const img = document.createElement("img");
+            img.src = partner.logo_url;
+            img.alt = partner.name;
+            img.classList.add("w-auto", "h-20", "object-contain");
+
+            partnerDiv.appendChild(img);
+            container.appendChild(partnerDiv);
+          });
+        })
+        .catch((error) => console.error("Error fetching the partners:", error));
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2025 Harika Prima Sakti. All Rights Reserved.</p>
+        <ul class="flex space-x-6">
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61565409063765"
+              class="hover:underline"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/harikahondabekasi/"
+              class="hover:underline"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-item");
+      const totalSlides = slides.length;
+
+      document.getElementById("next").addEventListener("click", () => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add("active");
+      });
+
+      document.getElementById("prev").addEventListener("click", () => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add("active");
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

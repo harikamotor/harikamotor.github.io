@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilih Honda Favorit Anda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Section Pilih Honda Favorit Anda -->
+    <section class="bg-white py-10">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-5">
+          Pilih Honda Favorit Anda
+        </h2>
+
+        <!-- Small Navbar for Honda Categories -->
+        <nav class="rounded-lg">
+          <ul class="flex justify-center space-x-6" id="honda-categories">
+            <li>
+              <a
+                href="#"
+                data-category="matic"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Matic</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="sport"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Sport</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="cub"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Cub</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="ev"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >EV</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                data-category="Bigbike"
+                class="text-gray-600 hover:text-gray-900 font-medium"
+                >Bigbike</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          id="product-list"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Produk akan dimuat di sini melalui JavaScript -->
+        </div>
+        <!-- Tombol View More -->
+        <button
+          id="view-more-btn"
+          class="bg-red-500 text-white px-6 py-2 mt-4 rounded hover:bg-red-600 hidden"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+
+    <script>
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const productList = document.getElementById("product-list");
+          const categoryLinks = document.querySelectorAll(
+            "#honda-categories a"
+          );
+          const viewMoreBtn = document.getElementById("view-more-btn");
+
+          let displayedProducts = 6; // Jumlah produk yang ditampilkan awal
+          let currentCategory = "All"; // Menyimpan kategori saat ini
+
+          // Tampilkan 6 produk awal
+          displayProducts(data.products.slice(0, displayedProducts));
+
+          // Fungsi untuk memfilter produk berdasarkan kategori
+          categoryLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+              event.preventDefault();
+              displayedProducts = 6; // Reset jumlah produk yang ditampilkan
+              viewMoreBtn.classList.remove("hidden"); // Tampilkan tombol View More lagi
+
+              // Hapus 'active' class dari semua link
+              categoryLinks.forEach((el) => {
+                el.classList.remove("text-gray-900", "font-bold");
+                el.classList.add("text-gray-600");
+              });
+
+              // Tambah 'active' class ke link yang diklik
+              link.classList.remove("text-gray-600");
+              link.classList.add("text-gray-900", "font-bold");
+
+              currentCategory = link.getAttribute("data-category");
+              filterProductsByCategory(currentCategory);
+            });
+          });
+
+          // Fungsi untuk filter produk
+          function filterProductsByCategory(category) {
+            if (category === "All") {
+              displayProducts(data.products.slice(0, displayedProducts));
+            } else {
+              const filteredProducts = data.products.filter(
+                (product) => product.category === category
+              );
+              displayProducts(filteredProducts.slice(0, displayedProducts));
+            }
+          }
+
+          // Fungsi untuk menampilkan produk
+          function displayProducts(products) {
+            productList.innerHTML = ""; // Bersihkan produk sebelumnya
+            products.forEach((product) => {
+              const productCard = document.createElement("div");
+              productCard.classList.add(
+                "bg-white",
+                "p-6",
+                "rounded-lg",
+                "shadow-lg"
+              );
+
+              const productImage = document.createElement("img");
+              productImage.src = product.image;
+              productImage.alt = product.name;
+              productImage.classList.add(
+                "w-full",
+                "h-48",
+                "object-cover",
+                "mb-4",
+                "rounded"
+              );
+              productCard.appendChild(productImage);
+
+              const productName = document.createElement("h3");
+              productName.classList.add("text-xl", "font-bold", "mb-2");
+              productName.textContent = product.name;
+              productCard.appendChild(productName);
+
+              const productPrice = document.createElement("p");
+              productPrice.classList.add(
+                "text-xl",
+                "text-red-500",
+                "mb-2",
+                "font-bold"
+              );
+              productPrice.textContent = `Rp ${product.price.toLocaleString()}`;
+              productCard.appendChild(productPrice);
+
+              const ratingStars = document.createElement("div");
+              ratingStars.classList.add(
+                "flex",
+                "justify-center",
+                "items-center",
+                "mb-4"
+              );
+
+              for (let i = 0; i < product.rating; i++) {
+                const star = document.createElement("i");
+                star.classList.add(
+                  "fas",
+                  "fa-star",
+                  "item-center",
+                  "text-yellow-500",
+                  "mr-1"
+                );
+                ratingStars.appendChild(star);
+              }
+              for (let i = product.rating; i < 5; i++) {
+                const emptyStar = document.createElement("i");
+                emptyStar.classList.add(
+                  "far",
+                  "fa-star",
+                  "item-center",
+                  "text-yellow-500",
+                  "mr-1"
+                );
+                ratingStars.appendChild(emptyStar);
+              }
+              productCard.appendChild(ratingStars);
+
+              const buyButton = document.createElement("button");
+              buyButton.classList.add(
+                "bg-red-500",
+                "text-white",
+                "px-4",
+                "py-2",
+                "rounded",
+                "mt-4",
+                "hover:bg-red-600"
+              );
+              buyButton.textContent = "Beli Sekarang";
+              buyButton.addEventListener("click", () => {
+                alert(`Anda membeli ${product.name}!`);
+              });
+              productCard.appendChild(buyButton);
+
+              productList.appendChild(productCard);
+            });
+
+            // Tampilkan tombol View More jika ada lebih banyak produk
+            if (products.length === displayedProducts) {
+              viewMoreBtn.classList.remove("hidden");
+            } else {
+              viewMoreBtn.classList.add("hidden");
+            }
+          } 
+
+          // Fungsi untuk View More produk
+          viewMoreBtn.addEventListener("click", () => {
+            displayedProducts += 6; // Tambah 6 produk lagi
+            filterProductsByCategory(currentCategory); // Tampilkan produk sesuai kategori
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching product data:", error);
+        });
+    </script>
+  </body>
+</html>

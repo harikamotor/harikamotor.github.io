@@ -1,0 +1,905 @@
+{
+    "careers": [
+        {
+          "title": "Salesman",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk menawarkan produk dan mencapai target penjualan yang telah ditetapkan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja minimal 1 tahun di bidang sales",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Sales Supervisor",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Mengawasi dan mendukung tim sales dalam mencapai target penjualan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 3 tahun di posisi serupa",
+            "Kemampuan manajerial dan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "Sales People Wing",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Menangani penjualan produk di area wing tertentu dan memberikan dukungan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang sales akan menjadi nilai tambah",
+            "Mampu bekerja dalam tim"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Sales People SWAT",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab atas penjualan khusus dan mendukung kebutuhan pelanggan dengan cepat.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di sales tim SWAT menjadi nilai tambah",
+            "Keterampilan problem-solving yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.500.000 - Rp 6.000.000"
+        },
+        {
+          "title": "Sales Counter",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Memberikan pelayanan kepada pelanggan yang datang ke counter dan memproses transaksi penjualan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam melayani pelanggan",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Sales Coordinator",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Mengkoordinasikan tim sales untuk memastikan target penjualan tercapai.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman sebagai sales coordinator minimal 2 tahun",
+            "Keterampilan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.500.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PIC CRM",
+          "department": "CRM",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk mengelola hubungan pelanggan dan menjaga tingkat kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan S1 di bidang yang relevan",
+            "Pengalaman di bidang CRM minimal 2 tahun",
+            "Keterampilan komunikasi dan interpersonal yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "PIC",
+          "department": "General",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab sebagai penanggung jawab untuk tugas dan proyek yang ditetapkan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 2 tahun",
+            "Memiliki tanggung jawab dan kemampuan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PDI Man",
+          "department": "Operations",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk inspeksi pra-pengiriman kendaraan sebelum diserahkan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam inspeksi kendaraan menjadi nilai tambah",
+            "Memiliki perhatian terhadap detail"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Owner",
+          "department": "Management",
+          "location": "Bekasi",
+          "description": "Mengelola keseluruhan operasional dan pengambilan keputusan strategis perusahaan.",
+          "requirements": [
+            "Pengalaman luas di bidang manajemen bisnis",
+            "Kemampuan dalam perencanaan strategis",
+            "Pemahaman mendalam tentang pasar dan industri"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "N/A"
+        },
+        {
+          "title": "Koordinator Counter",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Mengelola kegiatan penjualan di counter dan memastikan pelayanan pelanggan berjalan dengan baik.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai koordinator counter",
+            "Keterampilan kepemimpinan dan komunikasi"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Kasir Dealer",
+          "department": "Finance",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk mengelola transaksi pembayaran pelanggan dan administrasi keuangan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai kasir di dealer",
+            "Teliti dan dapat bekerja dengan cepat"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "General Manager",
+          "department": "Management",
+          "location": "Bekasi",
+          "description": "Memimpin dan mengelola operasional perusahaan secara keseluruhan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 5 tahun di posisi manajerial",
+            "Kemampuan dalam pengambilan keputusan strategis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 15.000.000 - Rp 20.000.000"
+        },
+        {
+          "title": "Delivery Man",
+          "department": "Operations",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk pengiriman barang kepada pelanggan tepat waktu.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Memiliki SIM yang valid",
+            "Pengalaman sebagai kurir atau delivery man"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.000.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Big Bike Manager",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Mengelola penjualan dan operasional untuk segmen big bike.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di segmen big bike",
+            "Kemampuan manajerial yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 12.000.000 - Rp 15.000.000"
+        },
+        {
+          "title": "Big Bike Consultant",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Menyarankan produk big bike terbaik kepada pelanggan sesuai dengan kebutuhan mereka.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di penjualan big bike",
+            "Keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 7.000.000 - Rp 9.000.000"
+        },
+        {
+          "title": "Big Bike Assistant",
+          "department": "Sales",
+          "location": "Bekasi",
+          "description": "Membantu big bike manager dalam operasional penjualan dan pengelolaan produk big bike.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di industri otomotif",
+            "Keterampilan manajemen waktu yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 6.500.000"
+        },
+        {
+          "title": "Area Manager",
+          "department": "Management",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab atas manajemen dan strategi penjualan di area tertentu.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di posisi serupa",
+            "Kemampuan dalam manajemen tim dan strategi bisnis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 10.000.000 - Rp 12.000.000"
+        },
+        {
+          "title": "Admin CRM",
+          "department": "CRM",
+          "location": "Bekasi",
+          "description": "Mengelola data pelanggan dan mendukung sistem CRM untuk meningkatkan kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang administrasi dan CRM",
+            "Teliti dan mampu bekerja di bawah tekanan"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Admin",
+          "department": "Administration",
+          "location": "Bekasi",
+          "description": "Bertanggung jawab untuk administrasi umum dan mendukung tim dengan tugas-tugas kantor.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman sebagai admin minimal 1 tahun",
+            "Keterampilan organisasi dan administrasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Salesman",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk menawarkan produk dan mencapai target penjualan yang telah ditetapkan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja minimal 1 tahun di bidang sales",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Sales Supervisor",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Mengawasi dan mendukung tim sales dalam mencapai target penjualan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 3 tahun di posisi serupa",
+            "Kemampuan manajerial dan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "Sales People Wing",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Menangani penjualan produk di area wing tertentu dan memberikan dukungan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang sales akan menjadi nilai tambah",
+            "Mampu bekerja dalam tim"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Sales People SWAT",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Bertanggung jawab atas penjualan khusus dan mendukung kebutuhan pelanggan dengan cepat.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di sales tim SWAT menjadi nilai tambah",
+            "Keterampilan problem-solving yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.500.000 - Rp 6.000.000"
+        },
+        {
+          "title": "Sales Counter",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Memberikan pelayanan kepada pelanggan yang datang ke counter dan memproses transaksi penjualan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam melayani pelanggan",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Sales Coordinator",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Mengkoordinasikan tim sales untuk memastikan target penjualan tercapai.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman sebagai sales coordinator minimal 2 tahun",
+            "Keterampilan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.500.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PIC CRM",
+          "department": "CRM",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk mengelola hubungan pelanggan dan menjaga tingkat kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan S1 di bidang yang relevan",
+            "Pengalaman di bidang CRM minimal 2 tahun",
+            "Keterampilan komunikasi dan interpersonal yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "PIC",
+          "department": "General",
+          "location": "Karawang",
+          "description": "Bertanggung jawab sebagai penanggung jawab untuk tugas dan proyek yang ditetapkan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 2 tahun",
+            "Memiliki tanggung jawab dan kemampuan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PDI Man",
+          "department": "Operations",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk inspeksi pra-pengiriman kendaraan sebelum diserahkan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam inspeksi kendaraan menjadi nilai tambah",
+            "Memiliki perhatian terhadap detail"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Owner",
+          "department": "Management",
+          "location": "Karawang",
+          "description": "Mengelola keseluruhan operasional dan pengambilan keputusan strategis perusahaan.",
+          "requirements": [
+            "Pengalaman luas di bidang manajemen bisnis",
+            "Kemampuan dalam perencanaan strategis",
+            "Pemahaman mendalam tentang pasar dan industri"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "N/A"
+        },
+        {
+          "title": "Koordinator Counter",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Mengelola kegiatan penjualan di counter dan memastikan pelayanan pelanggan berjalan dengan baik.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai koordinator counter",
+            "Keterampilan kepemimpinan dan komunikasi"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Kasir Dealer",
+          "department": "Finance",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk mengelola transaksi pembayaran pelanggan dan administrasi keuangan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai kasir di dealer",
+            "Teliti dan dapat bekerja dengan cepat"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "General Manager",
+          "department": "Management",
+          "location": "Karawang",
+          "description": "Memimpin dan mengelola operasional perusahaan secara keseluruhan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 5 tahun di posisi manajerial",
+            "Kemampuan dalam pengambilan keputusan strategis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 15.000.000 - Rp 20.000.000"
+        },
+        {
+          "title": "Delivery Man",
+          "department": "Operations",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk pengiriman barang kepada pelanggan tepat waktu.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Memiliki SIM yang valid",
+            "Pengalaman sebagai kurir atau delivery man"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.000.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Big Bike Manager",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Mengelola penjualan dan operasional untuk segmen big bike.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di segmen big bike",
+            "Kemampuan manajerial yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 12.000.000 - Rp 15.000.000"
+        },
+        {
+          "title": "Big Bike Consultant",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Menyarankan produk big bike terbaik kepada pelanggan sesuai dengan kebutuhan mereka.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di penjualan big bike",
+            "Keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 7.000.000 - Rp 9.000.000"
+        },
+        {
+          "title": "Big Bike Assistant",
+          "department": "Sales",
+          "location": "Karawang",
+          "description": "Membantu big bike manager dalam operasional penjualan dan pengelolaan produk big bike.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di industri otomotif",
+            "Keterampilan manajemen waktu yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 6.500.000"
+        },
+        {
+          "title": "Area Manager",
+          "department": "Management",
+          "location": "Karawang",
+          "description": "Bertanggung jawab atas manajemen dan strategi penjualan di area tertentu.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di posisi serupa",
+            "Kemampuan dalam manajemen tim dan strategi bisnis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 10.000.000 - Rp 12.000.000"
+        },
+        {
+          "title": "Admin CRM",
+          "department": "CRM",
+          "location": "Karawang",
+          "description": "Mengelola data pelanggan dan mendukung sistem CRM untuk meningkatkan kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang administrasi dan CRM",
+            "Teliti dan mampu bekerja di bawah tekanan"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Admin",
+          "department": "Administration",
+          "location": "Karawang",
+          "description": "Bertanggung jawab untuk administrasi umum dan mendukung tim dengan tugas-tugas kantor.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman sebagai admin minimal 1 tahun",
+            "Keterampilan organisasi dan administrasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Salesman",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk menawarkan produk dan mencapai target penjualan yang telah ditetapkan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja minimal 1 tahun di bidang sales",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Sales Supervisor",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Mengawasi dan mendukung tim sales dalam mencapai target penjualan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 3 tahun di posisi serupa",
+            "Kemampuan manajerial dan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "Sales People Wing",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Menangani penjualan produk di area wing tertentu dan memberikan dukungan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang sales akan menjadi nilai tambah",
+            "Mampu bekerja dalam tim"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Sales People SWAT",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Bertanggung jawab atas penjualan khusus dan mendukung kebutuhan pelanggan dengan cepat.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di sales tim SWAT menjadi nilai tambah",
+            "Keterampilan problem-solving yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.500.000 - Rp 6.000.000"
+        },
+        {
+          "title": "Sales Counter",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Memberikan pelayanan kepada pelanggan yang datang ke counter dan memproses transaksi penjualan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam melayani pelanggan",
+            "Memiliki keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Sales Coordinator",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Mengkoordinasikan tim sales untuk memastikan target penjualan tercapai.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman sebagai sales coordinator minimal 2 tahun",
+            "Keterampilan kepemimpinan yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.500.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PIC CRM",
+          "department": "CRM",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk mengelola hubungan pelanggan dan menjaga tingkat kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan S1 di bidang yang relevan",
+            "Pengalaman di bidang CRM minimal 2 tahun",
+            "Keterampilan komunikasi dan interpersonal yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 6.000.000 - Rp 8.000.000"
+        },
+        {
+          "title": "PIC",
+          "department": "General",
+          "location": "Bogor",
+          "description": "Bertanggung jawab sebagai penanggung jawab untuk tugas dan proyek yang ditetapkan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman kerja minimal 2 tahun",
+            "Memiliki tanggung jawab dan kemampuan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 7.000.000"
+        },
+        {
+          "title": "PDI Man",
+          "department": "Operations",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk inspeksi pra-pengiriman kendaraan sebelum diserahkan kepada pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman dalam inspeksi kendaraan menjadi nilai tambah",
+            "Memiliki perhatian terhadap detail"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 5.000.000"
+        },
+        {
+          "title": "Owner",
+          "department": "Management",
+          "location": "Bogor",
+          "description": "Mengelola keseluruhan operasional dan pengambilan keputusan strategis perusahaan.",
+          "requirements": [
+            "Pengalaman luas di bidang manajemen bisnis",
+            "Kemampuan dalam perencanaan strategis",
+            "Pemahaman mendalam tentang pasar dan industri"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "N/A"
+        },
+        {
+          "title": "Koordinator Counter",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Mengelola kegiatan penjualan di counter dan memastikan pelayanan pelanggan berjalan dengan baik.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai koordinator counter",
+            "Keterampilan kepemimpinan dan komunikasi"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Kasir Dealer",
+          "department": "Finance",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk mengelola transaksi pembayaran pelanggan dan administrasi keuangan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja sebagai kasir di dealer",
+            "Teliti dan dapat bekerja dengan cepat"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        },
+        {
+          "title": "General Manager",
+          "department": "Management",
+          "location": "Bogor",
+          "description": "Memimpin dan mengelola operasional perusahaan secara keseluruhan.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 5 tahun di posisi manajerial",
+            "Kemampuan dalam pengambilan keputusan strategis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 15.000.000 - Rp 20.000.000"
+        },
+        {
+          "title": "Delivery Man",
+          "department": "Operations",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk pengiriman barang kepada pelanggan tepat waktu.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Memiliki SIM yang valid",
+            "Pengalaman sebagai kurir atau delivery man"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.000.000 - Rp 4.500.000"
+        },
+        {
+          "title": "Big Bike Manager",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Mengelola penjualan dan operasional untuk segmen big bike.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di segmen big bike",
+            "Kemampuan manajerial yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 12.000.000 - Rp 15.000.000"
+        },
+        {
+          "title": "Big Bike Consultant",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Menyarankan produk big bike terbaik kepada pelanggan sesuai dengan kebutuhan mereka.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di penjualan big bike",
+            "Keterampilan komunikasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 7.000.000 - Rp 9.000.000"
+        },
+        {
+          "title": "Big Bike Assistant",
+          "department": "Sales",
+          "location": "Bogor",
+          "description": "Membantu big bike manager dalam operasional penjualan dan pengelolaan produk big bike.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman kerja di industri otomotif",
+            "Keterampilan manajemen waktu yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 5.000.000 - Rp 6.500.000"
+        },
+        {
+          "title": "Area Manager",
+          "department": "Management",
+          "location": "Bogor",
+          "description": "Bertanggung jawab atas manajemen dan strategi penjualan di area tertentu.",
+          "requirements": [
+            "Minimal lulusan S1",
+            "Pengalaman minimal 3 tahun di posisi serupa",
+            "Kemampuan dalam manajemen tim dan strategi bisnis"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 10.000.000 - Rp 12.000.000"
+        },
+        {
+          "title": "Admin CRM",
+          "department": "CRM",
+          "location": "Bogor",
+          "description": "Mengelola data pelanggan dan mendukung sistem CRM untuk meningkatkan kepuasan pelanggan.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman di bidang administrasi dan CRM",
+            "Teliti dan mampu bekerja di bawah tekanan"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 4.000.000 - Rp 5.500.000"
+        },
+        {
+          "title": "Admin",
+          "department": "Administration",
+          "location": "Bogor",
+          "description": "Bertanggung jawab untuk administrasi umum dan mendukung tim dengan tugas-tugas kantor.",
+          "requirements": [
+            "Minimal lulusan SMA/SMK",
+            "Pengalaman sebagai admin minimal 1 tahun",
+            "Keterampilan organisasi dan administrasi yang baik"
+          ],
+          
+      "applyLink": "https://docs.google.com/forms/salesman-application",
+      "available": false,
+          "salary": "Rp 3.500.000 - Rp 4.500.000"
+        }
+    ]
+  }
+  

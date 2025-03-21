@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Kredit Motor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10 bg-white p-8 shadow-lg rounded-lg">
+      <h2 class="text-2xl font-semibold text-center mb-6">
+        Simulasi Kredit Motor
+      </h2>
+      <form id="simulasiKreditForm" class="space-y-4">
+        <div>
+          <label for="motorType" class="block text-gray-700 font-medium"
+            >Pilih Motor:</label
+          >
+          <select
+            id="motorType"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+          >
+            <!-- Options for motor will be loaded here from products.json -->
+          </select>
+        </div>
+
+        <div>
+          <label for="leasingType" class="block text-gray-700 font-medium"
+            >Pilih Leasing:</label
+          >
+          <select
+            id="leasingType"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+          >
+            <!-- Options for leasing will be loaded here from leasing.json -->
+          </select>
+        </div>
+
+        <div>
+          <label for="downPayment" class="block text-gray-700 font-medium"
+            >DP (Rp):</label
+          >
+          <input
+            type="number"
+            id="downPayment"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+            placeholder="Masukkan DP"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="interestRate" class="block text-gray-700 font-medium"
+            >Suku Bunga (% per tahun):</label
+          >
+          <input
+            type="number"
+            id="interestRate"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+            placeholder="Masukkan suku bunga"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="loanTerm" class="block text-gray-700 font-medium"
+            >Jangka Waktu (bulan):</label
+          >
+          <input
+            type="number"
+            id="loanTerm"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+            placeholder="Masukkan jumlah bulan"
+            required
+          />
+        </div>
+
+        <button
+          type="button"
+          onclick="hitungCicilan()"
+          class="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition"
+        >
+          Hitung Cicilan Bulanan
+        </button>
+      </form>
+
+      <div
+        id="result"
+        class="text-lg font-semibold text-center mt-6 text-gray-700"
+      ></div>
+    </div>
+
+    <script>
+      // Fungsi untuk mengambil produk motor dari JSON dan mengisi dropdown motor
+      async function loadMotorProducts() {
+        try {
+          const response = await fetch("products.json"); // Ambil data dari products.json
+          const data = await response.json();
+
+          const motorSelect = document.getElementById("motorType");
+
+          // Hapus opsi yang ada
+          motorSelect.innerHTML = "";
+
+          // Tambahkan opsi dari data products.json
+          data.products.forEach((product) => {
+            const option = document.createElement("option");
+            option.value = product.price; // Harga digunakan sebagai value
+            option.text = `${
+              product.name
+            } (Rp ${product.price.toLocaleString()})`; // Nama dan harga motor sebagai teks opsi
+            motorSelect.appendChild(option);
+          });
+        } catch (error) {
+          console.error("Error fetching products:", error);
+        }
+      }
+
+      // Fungsi untuk mengambil leasing dari JSON dan mengisi dropdown leasing
+      async function loadLeasingOptions() {
+        try {
+          const response = await fetch("leasing.json"); // Ambil data dari leasing.json
+          const data = await response.json();
+
+          const leasingSelect = document.getElementById("leasingType");
+
+          // Hapus opsi yang ada
+          leasingSelect.innerHTML = "";
+
+          // Tambahkan opsi dari data leasing.json
+          data.leasing.forEach((lease) => {
+            const option = document.createElement("option");
+            option.value = lease.name; // Nama leasing sebagai value
+            option.text = lease.name; // Nama leasing sebagai teks opsi
+            leasingSelect.appendChild(option);
+          });
+        } catch (error) {
+          console.error("Error fetching leasing options:", error);
+        }
+      }
+
+      // Panggil fungsi saat halaman di-load
+      window.onload = function () {
+        loadMotorProducts();
+        loadLeasingOptions();
+      };
+
+      function hitungCicilan() {
+        const motorPrice = parseFloat(
+          document.getElementById("motorType").value
+        );
+        const downPayment = parseFloat(
+          document.getElementById("downPayment").value
+        );
+        const loanAmount = motorPrice - downPayment; // Harga motor dikurangi DP
+        const interestRate =
+          parseFloat(document.getElementById("interestRate").value) / 100;
+        const loanTerm = parseFloat(document.getElementById("loanTerm").value); // Jangka waktu dalam bulan
+
+        if (loanAmount <= 0) {
+          document.getElementById("result").innerText =
+            "DP harus lebih kecil dari harga motor.";
+          return;
+        }
+
+        const monthlyInterestRate = interestRate / 12; // Mengubah suku bunga tahunan menjadi bulanan
+        const monthlyPayment =
+          (loanAmount * monthlyInterestRate) /
+          (1 - Math.pow(1 + monthlyInterestRate, -loanTerm));
+
+        document.getElementById(
+          "result"
+        ).innerText = `Cicilan Bulanan: Rp ${monthlyPayment.toFixed(2)}`;
+      }
+    </script>
+  </body>
+</html>
