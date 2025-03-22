@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Singgih Handono",
+        "posisi": "Kepala Cabang",
+        "level": 1
+    },
+    {
+        "name": "Arneta Nindi S",
+        "posisi": "Admin Head",
+        "level": 2
+    },
+    {
+        "name": "Amin Rais",
+        "posisi": "Admin Logistik",
+        "level": 3
+    },
+    {
+        "name": "Toni Riyanto",
+        "posisi": "Admin Kasir",
+        "level": 3
+    },
+    {
+        "name": "Salsabila Dira",
+        "posisi": "Admin Tagihan",
+        "level": 3
+    },
+    {
+        "name": "Fauzan Ardi Muhana",
+        "posisi": "Admin STNK & BPKB",
+        "level": 3
+    },
+    {
+        "name": "Dewi Rahayu",
+        "posisi": "Sales Counter",
+        "level": 4
+    },
+    {
+        "name": "Itje",
+        "posisi": "Sales Counter",
+        "level": 4
+    },
+    {
+        "name": "Deina Jesicha Rahmawaty",
+        "posisi": "Sales Counter",
+        "level": 4
+    },
+    {
+        "name": "Reza Saputra",
+        "posisi": "PIC CRM",
+        "level": 2
+    },
+    {
+        "name": "Afif Fauzan",
+        "posisi": "Deliveryman",
+        "level": 3
+    },
+    {
+        "name": "Susanto Putra Irawan",
+        "posisi": "Deliveryman",
+        "level": 3
+    },
+    {
+        "name": "Edy Rohaedy",
+        "posisi": "Office Boy",
+        "level": 5
+    },
+    {
+        "name": "Sandi Kurniawan",
+        "posisi": "Office Boy",
+        "level": 5
+    }
+]
