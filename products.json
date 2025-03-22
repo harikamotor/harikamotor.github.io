@@ -7,7 +7,15 @@
       "price": 18530000,
       "description": "Honda BeAT is a stylish and fuel-efficient scooter, perfect for city commuting and short rides.",
       "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-beat-3-03062024-050824.png",
-      "rating": 4
+      "rating": 4,
+      "varian": {
+        "tipe": [
+          {
+            "nama": "BeAT Sporty CBS",
+            "warna": []
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -16,7 +24,15 @@
       "price": 19400000,
       "description": "Honda BeAT Street offers a unique design and nimble performance, great for those who want a more adventurous look.",
       "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-product-beat-street-03062024-044327.png",
-      "rating": 4
+      "rating": 4,
+      "varian": {
+        "tipe": [
+          {
+            "nama": "BeAT Street",
+            "warna": []
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -25,7 +41,19 @@
       "price": 19675000,
       "description": "Honda Genio combines modern design with efficient performance, making it ideal for everyday use.",
       "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-acc-6-25072023-093811.png",
-      "rating": 4
+      "rating": 4,
+      "varian": {
+        "tipe": [
+          {
+            "nama": "Genio CBS",
+            "warna": []
+          },
+          {
+            "nama": "Genio CBS ISS",
+            "warna": []
+          }
+        ]
+      }
     },
     {
       "id": 4,
