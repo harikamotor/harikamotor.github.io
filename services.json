@@ -1,23 +1,103 @@
 {
     "services": [
       {
-        "title": "Motorcycle Sales",
-        "description": "Find the latest motorcycles from leading brands with special offers and financing options available.",
-        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/home-banner-monkey-1366x573-tr-2-13022025-060002.jpg",
-        "alt_text": "Motorcycle Sales",
-        "button_text": "Shop Now",
-        "button_link": "products.html"
-      },
-      {
-        "title": "Service & Maintenance",
-        "description": "Keep your motorcycle in top condition with our expert servicing, maintenance, and repairs.",
-        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/website-banner-gtc-04032024-044009.jpg",
-        "alt_text": "Service & Maintenance",
-        "button_text": "Book Service",
+        "title": "Service Lengkap (15 Point)",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
         "button_link": "#"
       },
       {
-        "title": "Spare Parts",
+        "title": "Service Ringan (9 Point)",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Oli Plus (5 Point)",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Pembersihan CVT",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Kuras Tanki",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Ban",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Gear Set",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Kampas Rem Depan",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Kampas Rem Belakang",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Filter Udara",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Aki",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Ganti Kabel Speedometer",
+        "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
+        "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
+        "alt_text": "Spare Parts",
+        "button_text": "Shop Parts",
+        "button_link": "#"
+      },
+      {
+        "title": "Overhoul Mesin",
         "description": "Genuine motorcycle spare parts for all makes and models to ensure the best performance and durability.",
         "image_url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-1200,pr-true,f-auto/uploads/page/banner/banner-hgp-new-1-18082023-083643.png",
         "alt_text": "Spare Parts",
