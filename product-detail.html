@@ -1,1 +1,356 @@
-product-detail.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <title>Harika Prima Sakti - Motorcycle Dealer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Font Awesome CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMxj5B1G1IvnZnG1N1aLCczAfm7FKh3jvQ6DPRv" crossorigin="anonymous" />
+    <style>
+        /* Custom styles for mobile menu toggle */
+        #menu-btn.active+#mobile-menu {
+            display: block;
+        }
+
+        /* Fixed header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+        }
+
+        /* Add top margin to content to prevent it from being hidden under fixed header */
+        .content {
+            margin-top: 100px;
+            /* Adjust margin depending on the height of your header */
+        }
+    </style>
+</head>
+
+<header class="bg-red-600 text-white py-4 shadow-md relative z-10">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo Harika Motor (hanya tampil di desktop) -->
+        <h1 class="text-2xl font-bold hidden md:block">Harika Motor</h1>
+
+        <!-- Navigasi Utama (hanya tampil di desktop) -->
+        <nav class="hidden md:block">
+            <ul class="flex space-x-1">
+                <!-- Navigation links here (same as before) -->
+                <li>
+                    <a href="index.html" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Home</a>
+                </li>
+                <li>
+                    <a href="products.html" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Promotions</a>
+                </li>
+                <li class="relative">
+                    <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                        id="dealers-btn">Dealers</a>
+                    <!-- Dropdown menu same as before -->
+                </li>
+                <li class="relative">
+                    <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                        id="after-sales-btn">After Sales</a>
+                    <!-- Dropdown menu same as before -->
+                </li>
+                <li class="relative">
+                    <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                        id="corporate-btn">Corporate</a>
+                    <!-- Dropdown menu same as before -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Icons (Visible on mobile) -->
+        <div class="flex items-center space-x-4 md:hidden w-full">
+            <!-- Icon Back -->
+            <button class="text-white hover:text-gray-300 text-xl" aria-label="Back">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <!-- Search Box -->
+            <div class="relative flex-grow">
+                <input type="text" class="bg-white text-black px-3 py-1 rounded-md focus:outline-none w-full"
+                    placeholder="Search..." />
+                <!-- Icon Search (Loop) -->
+                <button class="absolute right-1 top-1 text-red-600" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Share Icon (now outside of the search box) -->
+            <a href="#" class="text-white hover:text-gray-300" aria-label="Share">
+                <i class="fas fa-share text-xl"></i>
+            </a>
+
+            <!-- Cart Icon -->
+            <a href="#" class="text-white hover:text-gray-300" aria-label="Cart">
+                <i class="fas fa-shopping-cart text-xl"></i>
+            </a>
+
+            <!-- Icon Titik 3 Menurun (Ellipsis Vertical) -->
+            <button class="text-white hover:text-gray-300 text-xl" aria-label="More Options">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu (Hidden by default) -->
+        <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-red-600 text-white z-10">
+            <ul class="space-y-2 p-4">
+                <li>
+                    <a href="index.html" class="block hover:bg-red-700 px-3 py-2 rounded-md">Home</a>
+                </li>
+                <li>
+                    <a href="products.html" class="block hover:bg-red-700 px-3 py-2 rounded-md">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md">Promotions</a>
+                </li>
+                <li>
+                    <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md">Dealers</a>
+                </li>
+                <li>
+                    <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md">After Sales</a>
+                </li>
+                <li>
+                    <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md">Corporate</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.toggle("hidden");
+        });
+
+    // Fungsi untuk toggle dropdown
+    function toggleDropdown(buttonId, menuId) {
+        const button = document.getElementById(buttonId);
+        const menu = document.getElementById(menuId);
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Menutup dropdown lainnya jika terbuka
+            document.querySelectorAll('ul[id$="-menu"]').forEach((el) => {
+                if (el !== menu) el.classList.add("hidden");
+            });
+            // Menampilkan/menyembunyikan dropdown yang di-*klik*
+            menu.classList.toggle("hidden");
+        });
+    }
+
+    // Memanggil fungsi untuk setiap tombol dropdown
+    toggleDropdown("dealers-btn", "dealers-menu");
+    toggleDropdown("after-sales-btn", "after-sales-menu");
+    toggleDropdown("corporate-btn", "corporate-menu");
+
+    // Klik di luar untuk menutup dropdown
+    window.addEventListener("click", function (e) {
+        if (!e.target.matches("a") && !e.target.closest("ul")) {
+            document
+                .querySelectorAll('ul[id$="-menu"]')
+                .forEach((el) => el.classList.add("hidden"));
+        }
+    });
+</script>
+<!-- Content Section -->
+<div class="content">
+    <!-- Product Detail Container -->
+    <div class="container mx-auto p-6">
+        <div class="bg-white shadow-xl rounded-lg p-6">
+            <div id="product-info" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product details will be dynamically loaded here -->
+            </div>
+        </div>
+        <script>
+            // 1. Ambil ID dari URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id'); // contoh URL: yourpage.html?id=1
+
+            // 2. Fetch product data from product.json
+            fetch('products.json')
+                .then((response) => response.json())
+                .then((data) => {
+                    // 3. Cari produk berdasarkan ID
+                    const product = data.products.find((prod) => prod.id == productId);
+
+                    // 4. Jika produk ditemukan, tampilkan informasinya
+                    if (product) {
+                        const productInfoDiv = document.getElementById('product-info');
+                        productInfoDiv.innerHTML = `
+                    <!-- Product Image -->
+                    <div>
+                        <img
+                            class="w-full h-96 object-contain rounded-lg"
+                            src="${product.image}"
+                            alt="${product.name}"
+                        />
+                    </div>
+
+
+                    <!-- Product Information -->
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <!-- Variant Type Selection -->
+                            <div class="hidden md:flex items-center mt-4">
+                                <label for="type" class="text-lg font-semibold text-gray-700">Pilih Tipe:</label>
+                                <select id="type" class="block mt-2 p-2 border border-gray-300 rounded-md focus:outline-none">
+                                    <option value="type1">Tipe 1</option>
+                                    <option value="type2">Tipe 2</option>
+                                    <option value="type3">Tipe 3</option>
+                                </select>
+                            </div>
+
+                            <!-- Variant Color Selection -->
+                            <div class="hidden md:flex items-center mt-4">
+                                <label for="color" class="text-lg font-semibold text-gray-700">Pilih Warna:</label>
+                                <div id="color" class="flex space-x-2 mt-2">
+                                    <div class="w-8 h-8 rounded-full bg-red-500 border-2 border-gray-300"></div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-gray-300"></div>
+                                    <div class="w-8 h-8 rounded-full bg-green-500 border-2 border-gray-300"></div>
+                                </div>
+                            </div>
+
+                            <!-- Product Price, Total Sales & Wishlist -->
+                            <div class="flex items-center justify-between mt-4">
+                                <span class="text-2xl text-red-500 font-semibold">
+                                    Rp ${product.price.toLocaleString()}
+                                </span>
+                                
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-gray-600 text-sm">Total Terjual: ${product.totalSold}</span>
+                                    <button class="text-gray-600 hover:text-red-500">
+                                        <!-- Font Awesome Heart Icon -->
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- Product Name -->
+                            <h1 class="text-3xl font-bold text-gray-800 mt-4">${product.name}</h1>
+
+                            <!-- Quantity Selector (Plus/Minus Buttons) -->
+                            <div class="hidden md:flex items-center mt-6">
+                                <div class="inline-flex border rounded-md">
+                                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-l-md focus:outline-none hover:bg-gray-400">
+                                        -
+                                    </button>
+                                    <input
+                                        type="number"
+                                        value="1"
+                                        min="1"
+                                        class="w-16 text-center text-xl border-t border-b border-gray-300 focus:outline-none"
+                                    />
+                                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-r-md focus:outline-none hover:bg-gray-400">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                `;
+                    } else {
+                        // Jika produk tidak ditemukan
+                        document.getElementById('product-info').innerHTML = `
+                    <p class="text-red-500">Product not found!</p>
+                `;
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error fetching product data:', error);
+                });
+        </script>
+        <!-- Customer Reviews Section -->
+        <div class="mt-10 bg-white shadow-xl rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-gray-800">Customer Reviews</h2>
+
+            <!-- Reviews will be dynamically injected here -->
+            <div id="reviews-container" class="mt-6"></div>
+        </div>
+        <script>
+            // Fungsi untuk mengambil parameter dari URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+        
+            // Ambil parameter id dari URL
+            const reviewId = getQueryParam("id");
+        
+            // Fetch the reviews from the JSON file
+            fetch("reviews.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const reviewsContainer = document.getElementById("reviews-container");
+        
+                    // Jika ada reviewId, filter data untuk review tertentu
+                    let reviewsToShow = data.reviews;
+                    if (reviewId) {
+                        reviewsToShow = reviewsToShow.filter((review) => review.productId === parseInt(reviewId));
+                    }
+        
+                    // Jika ada review yang cocok, tampilkan
+                    if (reviewsToShow.length > 0) {
+                        reviewsToShow.forEach((review) => {
+                            const reviewElement = document.createElement("div");
+                            reviewElement.classList.add("my-6", "flex", "items-start");
+        
+                            reviewElement.innerHTML = `
+                                <i class="fas fa-user-circle text-4xl text-gray-500"></i>
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-gray-800">${review.name}</h3>
+                                    <p class="text-sm text-gray-600">${review.date}</p>
+                                    <p class="mt-2 text-gray-600">${review.review}</p>
+                                </div>
+                            `;
+        
+                            reviewsContainer.appendChild(reviewElement);
+                        });
+                    } else {
+                        reviewsContainer.innerHTML = "<p>Tidak ada review yang ditemukan.</p>";
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error fetching reviews:", error);
+                });
+        </script>
+    </div>
+</div>
+
+<!-- Fixed Bottom Navbar, tampil hanya di mobile -->
+<div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-300 py-2 md:hidden">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Icon Obrolan -->
+        <button class="text-gray-700 text-2xl focus:outline-none">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <!-- Icon Troli -->
+        <button class="text-gray-700 text-2xl focus:outline-none">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+
+        <!-- Tombol Beli Sekarang -->
+        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg">
+            Beli Sekarang
+        </button>
+    </div>
+</div>
+</body>
+
+</html>
