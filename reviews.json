@@ -1,0 +1,44 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "productId": 1,
+            "name": "Indah Pratiwi",
+            "date": "March 20, 2025",
+            "review": "Produk ini sangat luar biasa! Kualitasnya bagus dan sangat bermanfaat. Benar-benar sesuai dengan harapan saya.",
+            "image": "https://via.placeholder.com/100"
+        },
+        {
+            "id": 2,
+            "productId": 1,
+            "name": "Tuti Nurtiah",
+            "date": "March 20, 2025",
+            "review": "Produk ini cukup bagus untuk harga yang ditawarkan. Saya puas dengan kinerjanya dan pasti akan merekomendasikan ke teman-teman.",
+            "image": "https://via.placeholder.com/100"
+        },
+        {
+            "id": 3,
+            "productId": 1,
+            "name": "Santi",
+            "date": "March 20, 2025",
+            "review": "Saya sangat senang dengan produk ini! Kualitasnya sesuai ekspektasi, tahan lama dan sangat membantu.",
+            "image": "https://via.placeholder.com/100"
+        },
+        {
+            "id": 4,
+            "productId": 1,
+            "name": "Santa Bin Sata",
+            "date": "March 20, 2025",
+            "review": "Sangat puas dengan produk ini! Bahannya kokoh dan benar-benar sesuai dengan deskripsi. Sangat direkomendasikan!",
+            "image": "https://via.placeholder.com/100"
+        },
+        {
+            "id": 5,
+            "productId": 1,
+            "name": "Edi Muhtadin",
+            "date": "March 20, 2025",
+            "review": "Produk ini melebihi ekspektasi saya. Kualitasnya sangat baik dan bekerja dengan sempurna. Sangat puas!",
+            "image": "https://via.placeholder.com/100"
+        }
+    ]
+}
