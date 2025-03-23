@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "name": "Ganti Oli",
+      "description": "Penggantian oli mesin dengan oli yang sesuai spesifikasi."
+    },
+    {
+      "id": 1,
+      "name": "Perawatan Rutin",
+      "description": "Layanan perawatan berkala untuk menjaga kondisi motor tetap optimal."
+    },
+    {
+      "id": 1,
+      "name": "Tune-Up Mesin",
+      "description": "Penyesuaian komponen mesin untuk performa yang lebih baik."
+    },
+    {
+      "id": 1,
+      "name": "Pemeriksaan Sistem Rem",
+      "description": "Pemeriksaan dan perbaikan sistem rem untuk keamanan berkendara."
+    },
+    {
+      "id": 1,
+      "name": "Penggantian Ban",
+      "description": "Layanan penggantian ban motor dengan tipe yang sesuai."
+    },
+    {
+      "id": 1,
+      "name": "Penggantian Aki",
+      "description": "Penggantian aki yang sudah habis masa pakainya."
+    },
+    {
+      "id": 1,
+      "name": "Penggantian Suku Cadang",
+      "description": "Penggantian komponen suku cadang yang aus atau rusak."
+    },
+    {
+      "id": 1,
+      "name": "Perbaikan Mesin",
+      "description": "Layanan perbaikan mesin untuk mengatasi masalah performa."
+    },
+    {
+      "id": 1,
+      "name": "Penyesuaian Kopling",
+      "description": "Penyesuaian kopling untuk pengoperasian transmisi yang lebih halus."
+    },
+    {
+      "id": 1,
+      "name": "Servis Suspensi",
+      "description": "Layanan servis suspensi untuk kenyamanan berkendara."
+    },
+    {
+      "id": 1,
+      "name": "Perbaikan Sistem Kelistrikan",
+      "description": "Pemeriksaan dan perbaikan sistem kelistrikan motor."
+    },
+    {
+      "id": 1,
+      "name": "Servis Transmisi",
+      "description": "Layanan servis transmisi untuk perbaikan perpindahan gigi."
+    },
+    {
+      "id": 1,
+      "name": "Pembersihan Sistem Bahan Bakar",
+      "description": "Pembersihan sistem bahan bakar untuk efisiensi konsumsi BBM."
+    },
+    {
+      "id": 1,
+      "name": "Pengurasan Sistem Pendingin",
+      "description": "Pengurasan dan penggantian cairan pendingin untuk mencegah overheat."
+    },
+    {
+      "id": 1,
+      "name": "Penggantian Rantai dan Gir",
+      "description": "Penggantian rantai dan gir yang sudah aus atau rusak."
+    }
+]
