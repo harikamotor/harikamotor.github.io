@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Harika Motor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="bg-red-600 text-white py-4 shadow-md relative z-10 sticky top-0">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo Harika Motor (hanya tampil di desktop) -->
+            <h1 class="text-2xl font-bold hidden md:block">Harika Motor</h1>
+
+            <!-- Navigasi Utama (hanya tampil di desktop) -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-1">
+                    <li>
+                        <a href="index.html" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html"
+                            class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md">Promotions</a>
+                    </li>
+                    <li class="relative dropdown">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                            id="dealers-btn">Dealers</a>
+                        <!-- Dropdown menu for Dealers -->
+                        <div id="dealers-dropdown"
+                            class="dropdown-content hidden absolute top-full left-0 w-full bg-red-600 text-white z-10">
+                            <a href="#">Harika Motor Bekasi</a>
+                            <a href="#">Harika Motor Bogor</a>
+                            <a href="#">Harika Motor Karawang</a>
+                        </div>
+                    </li>
+                    <li class="relative dropdown">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                            id="after-sales-btn">After Sales</a>
+                        <!-- Dropdown menu for After Sales -->
+                        <div id="after-sales-dropdown"
+                            class="dropdown-content hidden absolute top-full left-0 w-full bg-red-600 text-white z-10">
+                            <a href="#">Service</a>
+                            <a href="#">Honda Genuine Parts</a>
+                            <a href="#">Ban HGP</a>
+                            <a href="#">AHM Oil</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Apparel</a>
+                        </div>
+                    </li>
+                    <li class="relative dropdown">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                            id="corporate-btn">Corporate</a>
+                        <!-- Dropdown menu for Corporate -->
+                        <div id="corporate-dropdown"
+                            class="dropdown-content hidden absolute top-full left-0 w-full bg-red-600 text-white z-10">
+                            <a href="#">About Us</a>
+                            <a href="#">Sustainability</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Icons (Visible on mobile) -->
+            <div class="flex items-center space-x-4 md:hidden w-full">
+                <!-- Search Box -->
+                <div class="relative flex-grow">
+                    <input type="text" class="bg-white text-black px-3 py-1 rounded-md focus:outline-none w-full"
+                        placeholder="Search..." />
+                    <button class="absolute right-1 top-1 text-red-600" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Icon -->
+                <a href="#" class="text-white hover:text-gray-300" aria-label="Cart">
+                    <i class="fas fa-shopping-cart text-xl"></i>
+                </a>
+
+                <!-- Chat Icon -->
+                <a href="#" class="text-white hover:text-gray-300" aria-label="Chat">
+                    <i class="fas fa-comments text-xl"></i>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Dropdown Menu (Hidden by default) -->
+            <nav id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-red-600 text-white z-10">
+                <ul class="space-y-2 p-4">
+                    <li>
+                        <a href="index.html" class="block hover:bg-red-700 px-3 py-2 rounded-md">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="block hover:bg-red-700 px-3 py-2 rounded-md">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md">Promotions</a>
+                    </li>
+                    <li class="relative dropdown">
+                        <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md"
+                            id="mobile-dealers-btn">Dealers</a>
+                        <!-- Dropdown menu for Mobile Dealers -->
+                        <div id="mobile-dealers-dropdown"
+                            class="dropdown-content hidden absolute left-0 w-full bg-red-700 text-white z-10">
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Harika Motor Bekasi</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Harika Motor Bogor</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Harika Motor Karawang</a>
+                        </div>
+                    </li>
+
+                    <li class="relative dropdown">
+                        <a href="#" class="block hover:bg-red-700 px-3 py-2 rounded-md"
+                            id="mobile-after-sales-btn">After Sales</a>
+                        <!-- Dropdown menu for Mobile After Sales -->
+                        <div id="mobile-after-sales-dropdown"
+                            class="dropdown-content hidden absolute left-0 w-full bg-red-700 text-white z-10">
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Service</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Honda Genuine Parts</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Ban HGP</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">AHM Oil</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Accessories</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Apparel</a>
+                        </div>
+                    </li>
+
+                    <li class="relative dropdown">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md"
+                            id="corporate-btn">Corporate</a>
+                        <!-- Dropdown menu for Corporate -->
+                        <div id="corporate-dropdown"
+                            class="dropdown-content hidden absolute left-0 w-full bg-red-700 text-white z-10">
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">About Us</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Sustainability</a>
+                            <a href="#" class="block px-3 py-2 w-full hover:bg-red-800">Careers</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Optional JS for mobile menu toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Function to close all dropdowns
+        const closeAllDropdowns = () => {
+            const allDropdowns = document.querySelectorAll('.dropdown-content');
+            allDropdowns.forEach(dropdown => {
+                dropdown.classList.add('hidden');
+            });
+        };
+
+        // Function to toggle dropdown visibility
+        const toggleDropdown = (btnId, dropdownId) => {
+            const button = document.getElementById(btnId);
+            const dropdown = document.getElementById(dropdownId);
+
+            button.addEventListener('click', (e) => {
+                // Stop event propagation to avoid closing when clicking inside dropdown
+                e.stopPropagation();
+
+                // Close all dropdowns before opening the selected one
+                closeAllDropdowns();
+                dropdown.classList.toggle('hidden');
+            });
+
+            // Add event listeners to close the dropdown when an item is clicked
+            const dropdownItems = dropdown.querySelectorAll('a');
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Close dropdown when an item is clicked
+                    dropdown.classList.add('hidden');
+                });
+            });
+        };
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.dropdown')) {
+                closeAllDropdowns();
+            }
+        });
+
+        // Activate dropdowns
+        toggleDropdown('mobile-dealers-btn', 'mobile-dealers-dropdown');
+        toggleDropdown('mobile-after-sales-btn', 'mobile-after-sales-dropdown');
+        toggleDropdown('mobile-corporate-btn', 'mobile-corporate-dropdown');
+        toggleDropdown('dealers-btn', 'dealers-dropdown');
+        toggleDropdown('after-sales-btn', 'after-sales-dropdown');
+        toggleDropdown('corporate-btn', 'corporate-dropdown');
+    </script>
+
+</body>
+
+</html>
