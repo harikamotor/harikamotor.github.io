@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harika Motor</title>
+    <!-- Link ke Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link ke Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Navbar (Sticky) -->
+    <header class="bg-red-600 text-white py-4 shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo Harika Motor (hanya tampil di desktop) -->
+            <h1 class="text-xl font-bold hidden md:block">Harika Motor</h1>
+
+            <!-- Navigasi Utama (hanya tampil di desktop) -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-1">
+                    <li>
+                        <a href="index.html"
+                            class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm">Home</a>
+                    </li>
+                    <li>
+                        <a href="products.html"
+                            class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm">Products</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm">Promotions</a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm"
+                            id="dealers-btn">Dealers</a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm"
+                            id="after-sales-btn">After Sales</a>
+                    </li>
+                    <li class="relative">
+                        <a href="#" class="hover:bg-red-700 text-white block px-3 py-2 rounded-md text-sm"
+                            id="corporate-btn">Corporate</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Icons (Visible on mobile) -->
+            <div class="flex items-center space-x-4 md:hidden w-full">
+                <button class="text-white hover:text-gray-300 text-lg" aria-label="Back">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <div class="relative flex-grow">
+                    <input type="text"
+                        class="bg-white text-black px-3 py-1 rounded-md focus:outline-none w-full text-sm"
+                        placeholder="Search..." />
+                    <button class="absolute right-1 top-1 text-red-600" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <a href="#" class="text-white hover:text-gray-300 text-lg" aria-label="Share" id="share-btn">
+                    <i class="fas fa-share text-lg"></i>
+                </a>
+
+                <a href="#" class="text-white hover:text-gray-300 text-lg" aria-label="Cart">
+                    <i class="fas fa-shopping-cart text-lg"></i>
+                </a>
+
+                <button class="text-white hover:text-gray-300 text-lg relative" aria-label="More Options">
+                    <i class="fas fa-ellipsis-v"></i>
+                    <div id="dropdown-menu"
+                        class="hidden absolute right-0 bg-white text-black shadow-lg rounded-md w-72 mt-2">
+                        <ul class="space-y-2 p-2 w-full">
+                            <li>
+                                <a href="index.html"
+                                    class="block hover:bg-red-700 hover:text-white px-3 py-2 rounded-md text-base">Kembali
+                                    ke Halaman
+                                    Utama</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block hover:bg-red-700 hover:text-white px-3 py-2 rounded-md text-base">Laporkan
+                                    Produk Ini</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block hover:bg-red-700 hover:text-white px-3 py-2 rounded-md text-base">Butuh
+                                    Bantuan?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20"> <!-- Menambahkan padding top untuk konten di bawah navbar -->
+        <!-- Konten lain di sini -->
+    </main>
+
+    <!-- Footer Navbar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-md md:hidden w-full">
+        <!-- Semua Elemen dalam Tiga Kolom -->
+        <div class="flex justify-between items-center p-3">
+            <!-- Kolom 1: Ikon Obrolan -->
+            <a href="#" class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/3">
+                <i class="fas fa-comments text-2xl"></i> <!-- Ikon Chat -->
+            </a>
+
+            <!-- Kolom 2: Ikon Troli -->
+            <a href="#" class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/3">
+                <i class="fas fa-shopping-cart text-2xl"></i> <!-- Ikon Troli -->
+            </a>
+
+            <!-- Kolom 3: Tombol Beli Sekarang (Lebih Lebar) -->
+            <button class="bg-red-500 text-white w-2/3 py-2 rounded-full hover:bg-red-600">
+                Beli Sekarang
+            </button>
+        </div>
+    </div>
+
+    <!-- Share Dropdown Menu -->
+    <div id="dropdown-share"
+        class="hidden absolute bottom-0 left-0 bg-white text-black shadow-lg rounded-md w-full mt-2 z-20">
+        <div class="p-4 border-b">
+            <h2 class="text-lg text-center font-semibold">Share ke teman dan keluargamu</h2>
+        </div>
+        <div class="container mx-auto px-4 py-6">
+            <ul class="space-y-4 p-4">
+                <!-- Div 1: Kontak Saya -->
+                <li class="text-center">
+                    <div class="flex justify-start items-center space-x-4">
+                        <!-- Ikon Phonebook -->
+                        <a href="tel:+1234567890" class="text-white bg-red-500 py-2 px-3 rounded-full"
+                            aria-label="Kontak Saya">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                        <div class="flex flex-col">
+                            <p class="font-medium text-left">Kontak Saya</p>
+                            <p class="text-sm">Bagikan ke teman dan kontak lainnya</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Div 2: Media Sosial -->
+                <li class="text-center flex justify-start space-x-4">
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="https://wa.me/yournumber" target="_blank"
+                            class="text-green-500 bg-green-100 py-2 px-3 rounded-full">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <span class="text-sm">WhatsApp</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="https://www.instagram.com/yourprofile" target="_blank"
+                            class="text-pink-600 bg-pink-100 py-2 px-3 rounded-full">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <span class="text-sm">Story</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="https://www.feedgram.com/yourprofile" target="_blank"
+                            class="text-gray-800 bg-gray-100 py-2 px-3 rounded-full">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <span class="text-sm">Feed instagram</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="https://t.me/yourusername" target="_blank"
+                            class="text-blue-500 bg-blue-100 py-2 px-3 rounded-full">
+                            <i class="fab fa-telegram-plane text-xl"></i>
+                        </a>
+                        <span class="text-sm">Telegram</span>
+                    </div>
+                </li>
+
+                <!-- Div 3: Pilihan Lainnya -->
+                <li class="text-center flex justify-start space-x-4">
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="#" class="text-gray-600 bg-gray-100 py-2 px-3 rounded-full">
+                            <i class="fas fa-link text-xl"></i>
+                        </a>
+                        <span class="text-sm">Salin Link</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="#" class="text-gray-600 bg-gray-100 py-2 px-3 rounded-full">
+                            <i class="fas fa-image text-xl"></i>
+                        </a>
+                        <span class="text-sm">Simpan Foto</span>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <a href="#" class="text-gray-600 bg-gray-100 py-2 px-3 rounded-full">
+                            <i class="fas fa-ellipsis-h text-xl"></i>
+                        </a>
+                        <span class="text-sm">Lainnya</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Share Dropdown Menu
+        document.getElementById('share-btn').addEventListener('click', function () {
+            const shareMenu = document.getElementById('dropdown-share');
+            shareMenu.classList.toggle('hidden');
+        });
+
+        // Toggle Dropdown Menu for More Options
+        document.querySelector('.fa-ellipsis-v').addEventListener('click', function () {
+            const menu = document.getElementById('dropdown-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close the dropdown menu if clicked outside
+        document.addEventListener('click', function (event) {
+            const shareMenu = document.getElementById('dropdown-share');
+            const menu = document.getElementById('dropdown-menu');
+            const button = document.querySelector('.fa-ellipsis-v');
+            const shareButton = document.getElementById('share-btn');
+
+            if (!button.contains(event.target) && !menu.contains(event.target) && !shareButton.contains(event.target) && !shareMenu.contains(event.target)) {
+                menu.classList.add('hidden');
+                shareMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
