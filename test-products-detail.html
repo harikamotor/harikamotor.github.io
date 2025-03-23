@@ -68,7 +68,7 @@
                     <i class="fas fa-share text-lg"></i>
                 </a>
 
-                <a href="#" class="text-white hover:text-gray-300 text-lg" aria-label="Cart">
+                <a href="keranjang-saya.html" class="text-white hover:text-gray-300 text-lg" aria-label="Cart">
                     <i class="fas fa-shopping-cart text-lg"></i>
                 </a>
 
@@ -110,25 +110,62 @@
         <!-- Semua Elemen dalam Tiga Kolom -->
         <div class="flex justify-between items-center p-3">
             <!-- Kolom 1: Ikon Obrolan -->
-            <a href="#" class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/3">
+            <a href="#" class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/6">
                 <i class="fas fa-comments text-2xl"></i> <!-- Ikon Chat -->
             </a>
-
             <!-- Kolom 2: Ikon Troli -->
-            <a href="#" class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/3">
+            <a href="javascript:void(0);" id="cart-icon"
+                class="flex flex-col items-center text-gray-600 hover:text-red-500 w-1/6">
                 <i class="fas fa-shopping-cart text-2xl"></i> <!-- Ikon Troli -->
             </a>
 
             <!-- Kolom 3: Tombol Beli Sekarang (Lebih Lebar) -->
-            <button class="bg-red-500 text-white w-2/3 py-2 rounded-full hover:bg-red-600">
+            <button class="bg-red-600 text-white w-4/6 py-2 rounded-lg hover:bg-red-600">
                 Beli Sekarang
             </button>
         </div>
     </div>
 
-    <!-- Share Dropdown Menu -->
-    <div id="dropdown-share"
+    <!-- Div yang akan ditampilkan ketika troli diklik -->
+    <div id="cart-dropdown"
         class="hidden absolute bottom-0 left-0 bg-white text-black shadow-lg rounded-md w-full mt-2 z-20">
+        <div class="p-4 border-b">
+            <h2 class="text-lg text-center font-semibold">Keranjang Belanja</h2>
+        </div>
+        <div class="container mx-auto px-4 py-6">
+            <ul class="space-y-4 p-4">
+                <!-- Daftar item dalam keranjang -->
+                <li class="flex justify-between">
+                    <span>Item 1</span>
+                    <span>Rp 50.000</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>Item 2</span>
+                    <span>Rp 100.000</span>
+                </li>
+                <li class="flex justify-between">
+                    <span>Item 3</span>
+                    <span>Rp 75.000</span>
+                </li>
+                <li class="flex justify-between mt-4">
+                    <span>Total</span>
+                    <span>Rp 225.000</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- JavaScript untuk menampilkan dan menyembunyikan div ketika klik ikon troli -->
+    <script>
+        document.getElementById("cart-icon").addEventListener("click", function () {
+            var cartDropdown = document.getElementById("cart-dropdown");
+            // Toggle visibility of the cart dropdown
+            cartDropdown.classList.toggle("hidden");
+        });
+    </script>
+    <!-- Share Dropdown Menu -->
+    <div id="dropdown-share" class="hidden absolute bottom-0 left-0 bg-white text-black shadow-lg  w-full mt-2 z-20">
         <div class="p-4 border-b">
             <h2 class="text-lg text-center font-semibold">Share ke teman dan keluargamu</h2>
         </div>
@@ -150,7 +187,7 @@
                 </li>
 
                 <!-- Div 2: Media Sosial -->
-                <li class="text-center flex justify-start space-x-4">
+                <li class="flex space-x-6">
                     <div class="flex flex-col items-center space-y-2">
                         <a href="https://wa.me/yournumber" target="_blank"
                             class="text-green-500 bg-green-100 py-2 px-3 rounded-full">
@@ -185,7 +222,7 @@
                 </li>
 
                 <!-- Div 3: Pilihan Lainnya -->
-                <li class="text-center flex justify-start space-x-4">
+                <li class="flex space-x-6">
                     <div class="flex flex-col items-center space-y-2">
                         <a href="#" class="text-gray-600 bg-gray-100 py-2 px-3 rounded-full">
                             <i class="fas fa-link text-xl"></i>
@@ -210,6 +247,7 @@
             </ul>
         </div>
     </div>
+
 
     <script>
         // Toggle Share Dropdown Menu
