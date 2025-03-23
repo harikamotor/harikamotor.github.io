@@ -199,8 +199,25 @@
                             alt="${product.name}"
                         />
                     </div>
-
-
+                    <div class="text-left">
+                    <p>variasi</p>
+                    <div class="flex gap-2 justify-start">
+                        <img
+                            class="w-12 h-12 object-contain rounded-lg"
+                            src="${product.detailImage}"
+                            alt="${product.name}"
+                        />
+                        <img
+                            class="w-12 h-12 object-contain rounded-lg"
+                            src="${product.detailImage}"
+                            alt="${product.name}"
+                        />
+                        <img
+                            class="w-12 h-12 object-contain rounded-lg"
+                            src="${product.detailImage}"
+                            alt="${product.name}"
+                        />
+                    </div>
                     <!-- Product Information -->
                     <div class="flex flex-col justify-between">
                         <div>
@@ -288,28 +305,28 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 return urlParams.get(param);
             }
-        
+
             // Ambil parameter id dari URL
             const reviewId = getQueryParam("id");
-        
+
             // Fetch the reviews from the JSON file
             fetch("reviews.json")
                 .then((response) => response.json())
                 .then((data) => {
                     const reviewsContainer = document.getElementById("reviews-container");
-        
+
                     // Jika ada reviewId, filter data untuk review tertentu
                     let reviewsToShow = data.reviews;
                     if (reviewId) {
                         reviewsToShow = reviewsToShow.filter((review) => review.productId === parseInt(reviewId));
                     }
-        
+
                     // Jika ada review yang cocok, tampilkan
                     if (reviewsToShow.length > 0) {
                         reviewsToShow.forEach((review) => {
                             const reviewElement = document.createElement("div");
                             reviewElement.classList.add("my-6", "flex", "items-start");
-        
+
                             reviewElement.innerHTML = `
                                 <i class="fas fa-user-circle text-4xl text-gray-500"></i>
                                 <div class="ml-4">
@@ -318,7 +335,7 @@
                                     <p class="mt-2 text-gray-600">${review.review}</p>
                                 </div>
                             `;
-        
+
                             reviewsContainer.appendChild(reviewElement);
                         });
                     } else {
