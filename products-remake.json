@@ -1,0 +1,336 @@
+[
+  {
+      "id": 1,
+      "name": "BeAT",
+      "category": "matic",
+      "price": 18530000,
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-beat-3-03062024-050824.png",
+      "rating": 5,
+      "terjual": 150,
+      "penilaian": 200,
+      "varian": {
+          "tipe": [
+              {
+                  "nama": "Deluxe Smart Key",
+                  "warna": [
+                      {
+                          "nama": "Blue",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-blue-2-03062024-045618.png"
+                      },
+                      {
+                          "nama": "Green",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-green-03062024-045634.png"
+                      },
+                      {
+                          "nama": "Silver",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-black-3-03062024-045648.png"
+                      }
+                  ]
+              },
+              {
+                  "nama": "Deluxe",
+                  "warna": [
+                      {
+                          "nama": "Hitam",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/deluxe-black1-03062024-064019.png"
+                      },
+                      {
+                          "nama": "Silver",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-silver-03062024-045718.png"
+                      }
+                  ]
+              },
+              {
+                  "nama": "CBS",
+                  "warna": [
+                      {
+                          "nama": "Merah",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/beat-street-varian-515x504-02-03062024-064155.png"
+                      },
+                      {
+                          "nama": "Hitam",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/beat-street-varian-515x504-01-1-03062024-064204.png"
+                      },
+                      {
+                          "nama": "Putih Biru",
+                          "url": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/beat-street-varian-515x504-03-03062024-064212.png"
+                      }
+                  ]
+              }
+          ]
+      }
+  },
+
+    {
+      "id": 2,
+      "name": "BeAT Street",
+      "category": "matic",
+      "price": 19400000,
+      "description": "Honda BeAT Street offers a unique design and nimble performance, great for those who want a more adventurous look.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-product-beat-street-03062024-044327.png",
+      "rating": 4,
+      "varian": {
+        "tipe": [
+          {
+            "nama": "BeAT Street",
+            "warna": []
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Genio",
+      "category": "matic",
+      "price": 19675000,
+      "description": "Honda Genio combines modern design with efficient performance, making it ideal for everyday use.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-acc-6-25072023-093811.png",
+      "rating": 4,
+      "varian": {
+        "tipe": [
+          {
+            "nama": "Genio CBS",
+            "warna": []
+          },
+          {
+            "nama": "Genio CBS ISS",
+            "warna": []
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Scoopy",
+      "category": "matic",
+      "price": 22525000,
+      "description": "Honda Scoopy features a retro-modern design, ideal for riders who value both style and comfort.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/new-honda-scoopy-sideview-right-stylish-green-400x300px-upload-2-06112024-012304.png",
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "Vario 125",
+      "category": "matic",
+      "price": 23410000,
+      "description": "Honda Vario 125 offers powerful performance and advanced features, making it suitable for urban riding.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-vario-125-04062024-094941.png",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Vario 160",
+      "category": "matic",
+      "price": 27600000,
+      "description": "Honda Vario 160 delivers strong acceleration and excellent fuel efficiency, perfect for long rides.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-vario160-400x300-tr-10012024-040039.png",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "name": "Stylo 160",
+      "category": "matic",
+      "price": 28395000,
+      "description": "Honda Stylo 160 is a premium scooter with sleek design and powerful performance for city commuting.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-stylo160-02022024-043633.png",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "PCX 160",
+      "category": "matic",
+      "price": 33750000,
+      "description": "Honda PCX 160 offers luxurious comfort and advanced features, designed for a smooth ride.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/product-thumbnail-400x300px-red-metallic-06122024-030208.png",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "ADV 160",
+      "category": "matic",
+      "price": 36715000,
+      "description": "Honda ADV 160 combines off-road capabilities with urban practicality, perfect for adventurous riders.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-explore-side-view-tough-mattebrown-03112023-074815.png",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "Forza",
+      "category": "matic",
+      "price": 90515000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/forza-400x300-22062023-110136-23062023-090027.png",
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "name": "CB150 Verza",
+      "category": "sport",
+      "price": 22660000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thmbnl-4-verza-550x413px-r1-22112024-041404.png",
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "name": "Sonic 150R",
+      "category": "sport",
+      "price": 28440000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/sonic-150r-550x413px-r1-22112024-041432.png",
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "name": "CB150R Streetfire",
+      "category": "sport",
+      "price": 32130000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/cb1504-550x413px-r1-22112024-041458.png",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "name": "CB150X",
+      "category": "sport",
+      "price": 34520000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/fa-ahm-sport-mid-thumbnail-550x413px-21112024-100503.png",
+      "rating": 5
+    },
+    {
+      "id": 15,
+      "name": "CRF150L",
+      "category": "sport",
+      "price": 37205000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-motor-new-crf150l-550x413px-21112024-100618.png",
+      "rating": 5
+    },
+    {
+      "id": 16,
+      "name": "CBR150R",
+      "category": "sport",
+      "price": 38570000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-cbr150r-550x413px-tr-new-2-21112024-100742.png",
+      "rating": 5
+    },
+    {
+      "id": 17,
+      "name": "CBR250RR",
+      "category": "sport",
+      "price": 66335000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-cbr-550x413px-r1-2611-26112024-080056.png",
+      "rating": 5
+    },
+    {
+      "id": 18,
+      "name": "CRF250L",
+      "category": "sport",
+      "price": 79925000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-motor-crf-550x413px-21112024-101057.png",
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "name": "ST125 Dax",
+      "category": "sport",
+      "price": 82480000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/st125-dax-550x413px-21112024-101348.png",
+      "rating": 5
+    },
+    {
+      "id": 20,
+      "name": "Monkey",
+      "category": "sport",
+      "price": 87170000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-monkey-400x300-tr-13022025-050041.png",
+      "rating": 5
+    },
+    {
+      "id": 21,
+      "name": "CRF250 Rally",
+      "category": "sport",
+      "price": 93345000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-crf250rally-550x413px-r1-22112024-041202.png",
+      "rating": 5
+    },
+    {
+      "id": 22,
+      "name": "Revo",
+      "category": "cub",
+      "price": 17035000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thmbnail-product-2-24012022-110536.png",
+      "rating": 5
+    },
+    {
+      "id": 23,
+      "name": "Supra X 125 FI",
+      "category": "cub",
+      "price": 20400000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/thumbnail-new-supra-x-5-04032022-102907.png",
+      "rating": 5
+    },
+    {
+      "id": 24,
+      "name": "GTR 150",
+      "category": "cub",
+      "price": 26315000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/supra-gtr-150-4-27052021-092133.png",
+      "rating": 5
+    },
+    {
+      "id": 25,
+      "name": "sportcub C125",
+      "category": "cub",
+      "price": 77665000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/400x300-pxl-03052024-061642-1-10052024-062406.png",
+      "rating": 5
+    },
+    {
+      "id": 26,
+      "name": "CT 125",
+      "category": "cub",
+      "price": 81850000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ct125-400x300-3-14062023-040229.png",
+      "rating": 5
+    },
+    {
+      "id": 27,
+      "name": "ICON e:",
+      "category": "ev",
+      "price": 28000000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/ahm-light-sideview-blue-4-08102024-032201-09102024-051105.png",
+      "rating": 5
+    },
+    {
+      "id": 28,
+      "name": "EM1 e: & EM1 e: PLUS",
+      "category": "ev",
+      "price": 40000000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/em1-silver-samping-400x300-tr-21122023-045018.png",
+      "rating": 5
+    },
+    {
+      "id": 29,
+      "name": "CUV e: & CUV e: RoadSync Duo",
+      "category": "ev",
+      "price": 54450000,
+      "description": "Honda Forza offers premium performance and high-end features, perfect for long-distance touring.",
+      "image": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto/uploads/product/thumbnail/a01-p01-2025-cuve-mat-pearl-crater-white-rh-side-std-1-08102024-044120-09102024-053635.png",
+      "rating": 5
+    }
+  ]
