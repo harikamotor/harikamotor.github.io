@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMxj5B1G1IvnZnG1N1aLCczAfm7FKh3jvQ6DPRv" crossorigin="anonymous" />
+
 </head>
 
 <body class="bg-white-800 text-gray-900">
@@ -60,7 +61,7 @@
         </div>
 
         <!-- Cart Icon -->
-        <a href="#" class="text-white hover:text-gray-300" aria-label="Cart">
+        <a href="keranjang-saya.html" class="text-white hover:text-gray-300" aria-label="Cart">
           <i class="fas fa-shopping-cart text-xl"></i>
         </a>
 
@@ -138,34 +139,104 @@
   <!-- Swiper Hero Section -->
   <section class="relative bg-cover bg-center">
     <!-- Swiper -->
-    <div class="swiper-container h-full">
+    <div class="swiper-container overflow-hidden w-full">
       <div class="swiper-wrapper" id="carousel"></div>
       <!-- Pagination (optional) -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination hidden"></div>
     </div>
   </section>
+  <!-- TailwindCSS Classes for Responsive Layout -->
+  <style>
+    /* Tailwind doesn't directly support "object-fit: cover" or "object-position", 
+   so we use the Tailwind utilities for that */
+
+    @media (max-width: 768px) {
+
+      /* Adjust Swiper container height for mobile screens */
+      .swiper-container {
+        margin-top: 5vh;
+        /* This sets the height to 60% of the viewport height */
+        overflow: hidden;
+        /* Prevent any content from spilling out */
+      }
+
+      /* Ensure images scale properly */
+      .swiper-image {
+        object-fit: cover !important;
+        /* Ensure the image covers the entire container */
+        object-position: center !important;
+        /* Center the image */
+        width: 100% !important;
+        /* Ensure image is always 100% width */
+        height: 100% !important;
+        /* Ensure image fills the container's height */
+      }
+    }
+
+    /* For larger screens (optional adjustments) */
+    @media (min-width: 768px) {
+
+      .swiper-container {
+        height: 75vh !important;
+        /* Adjust height for larger screens */
+        overflow: hidden;
+      }
+
+      .swiper-image {
+        object-fit: cover !important;
+        object-position: center !important;
+      }
+    }
+  </style>
+
   <script>
-    // Fetch banner data from banner.json
-    fetch("assets/banner.json")
-      .then((response) => response.json())
-      .then((bannerData) => {
-        const carousel = document.getElementById("carousel");
-        let slides = "";
+    document.addEventListener("DOMContentLoaded", function () {
+      // Fetch banner data from banner.json
+      fetch("assets/banner.json")
+        .then((response) => response.json())
+        .then((bannerData) => {
+          const carousel = document.getElementById("carousel");
+          let slides = "";
 
-        bannerData.forEach((banner) => {
-          slides += `
-          <div class="swiper-slide h-screen flex justify-center items-center">
-            <img src="${banner.src}" alt="${banner.alt}" class="w-full h-full object-contain" />
-          </div>`;
-        });
+          bannerData.forEach((banner) => {
+            slides += `
+            <div class="swiper-slide flex justify-center items-center w-full">
+              <img src="${banner.src}" alt="${banner.alt}" class="swiper-image w-full h-full md:h-auto object-cover object-center" />
+            </div>`;
+          });
 
-        // Insert slides into the swiper-wrapper
-        carousel.innerHTML = slides;
+          // Insert slides into the swiper-wrapper
+          carousel.innerHTML = slides;
 
-      })
-      .catch((error) => console.error("Error loading banner data:", error));
+          // Initialize Swiper
+          const swiper = new Swiper('.swiper-container', {
+            loop: true,  // Enable loop for infinite scrolling
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              // When the viewport width is <= 768px (mobile/tablet screens)
+              768: {
+                slidesPerView: 1,  // Show only one slide at a time
+                spaceBetween: 0,   // No space between slides
+                autoHeight: true,  // Adjust height based on content
+              },
+              // For larger screens (desktops)
+              1024: {
+                slidesPerView: 1,  // Only 1 slide per view
+                spaceBetween: 0,   // No space between slides
+                autoHeight: true,  // Keep height responsive
+              }
+            }
+          });
+        })
+        .catch((error) => console.error("Error loading banner data:", error));
+    });
   </script>
-  <!-- Section Pilih Honda Favorit Anda -->
+
+
+  <!--Section Pilih Honda Favorit Anda -->
   <section class="bg-white py-10">
     <div class="container mx-auto text-center">
       <h2 class="text-2xl font-bold text-gray-800 mb-5">
@@ -462,7 +533,7 @@
       })
       .catch((error) => console.error("Error fetching the partners:", error));
   </script><!-- Footer -->
-  <footer class="bg-red-800 text-white py-6 hidden md:flex">
+  <footer class="bg-red-600 text-white py-6 hidden md:flex">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
       <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 <a href="http://www.facebook.com/kakrezasaputra">Reza
           Saputra</a>. All Rights Reserved.</p>
