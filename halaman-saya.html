@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan dan Profil</title>
+
+    <!-- Link ke Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link ke TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="bg-red-500 text-white">
+        <!-- Header Flex (Semacam Navbar tanpa bentuk navbar tradisional) -->
+        <div class="flex justify-between items-center py-3">
+            <!-- Kiri - Mulai Jualan dengan Ikon -->
+            <div class="flex items-center space-x-3 bg-white text-black py-1 px-2 rounded-r-lg">
+                <!-- Menambahkan radius kanan -->
+                <i class="fas fa-store text-md"></i> <!-- Ikon Toko -->
+                <span class="text-md font-semibold">Mulai Jualan</span>
+                <i class="fas fa-angle-right text-md"></i> <!-- Ikon Kurung Siku -->
+            </div>
+
+            <!-- Tengah - Ikon Pengaturan, Troli, dan Obrolan -->
+            <div class="flex space-x-6 px-3">
+                <i class="fas fa-cog text-xl cursor-pointer"></i> <!-- Icon Gear -->
+                <i class="fas fa-shopping-cart text-xl cursor-pointer"></i> <!-- Icon Troli -->
+                <i class="fas fa-comments text-xl cursor-pointer"></i> <!-- Icon Obrolan -->
+            </div>
+        </div>
+
+        <!-- Profil -->
+        <div class="flex items-center space-x-4 p-6 shadow-md">
+            <img src="https://via.placeholder.com/40" alt="Foto Profil" class="w-10 h-10 rounded-full">
+            <div class="flex flex-col text-sm">
+                <span class="font-semibold">John Doe</span>
+                <!-- Membuat Pengikut dan Mengikuti sejajar -->
+                <div class="flex space-x-6">
+                    <span>Pengikut: 1200</span>
+                    <span>Mengikuti: 350</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Pesanan Saya -->
+    <div class="p-6 mt-6 bg-white shadow-md">
+        <!-- Judul dengan link -->
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-xl font-semibold">Pesanan Saya</h3>
+            <a href="#" class="text-red-400 text-sm hover:underline">Lihat Pesanan Lainnya</a>
+        </div>
+
+        <!-- 4 Kolom Status Pesanan -->
+        <div class="grid grid-cols-4 gap-6">
+            <div class="flex flex-col items-center">
+                <i class="fas fa-clock text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Belum Bayar</span> <!-- Teks lebih kecil -->
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-box text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Dikemas</span> <!-- Teks lebih kecil -->
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-truck text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Dikirim</span> <!-- Teks lebih kecil -->
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-star text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Berikan Penilaian</span> <!-- Teks lebih kecil -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bantuan -->
+    <div class="p-6 mt-6 bg-white shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Bantuan</h3>
+        <div class="flex space-x-6">
+            <!-- Pusat Bantuan -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-question-circle text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Pusat Bantuan</span>
+            </div>
+            <!-- Chat dengan Admin -->
+            <div class="flex flex-col items-center">
+                <i class="fas fa-comment-dots text-gray-400 text-3xl"></i>
+                <span class="text-sm mt-2">Chat dengan Admin</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
