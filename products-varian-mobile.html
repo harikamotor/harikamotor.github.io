@@ -14,215 +14,159 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <!-- Gambar Utama -->
-        <div class="h-48 bg-gray-200">
-            <img src="path-to-main-image.jpg" alt="Main Product Image" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Gambar Varian -->
-        <div class="flex space-x-2 p-4">
-            <img src="path-to-variant1.jpg" alt="Variant 1" class="w-12 h-12 object-cover rounded-md">
-            <img src="path-to-variant2.jpg" alt="Variant 2" class="w-12 h-12 object-cover rounded-md">
-            <img src="path-to-variant3.jpg" alt="Variant 3" class="w-12 h-12 object-cover rounded-md">
-        </div>
-        <!-- Harga, Jumlah Penjualan, dan Wishlist -->
-        <div class="flex justify-between items-center px-4 py-2">
-            <!-- Harga -->
-            <div>
-                <p class="text-xl font-bold text-gray-800">Rp 5,000,000</p>
-            </div>
-            <!-- Penjualan dan Wishlist -->
-            <div class="flex items-center space-x-4">
-                <p class="text-sm text-gray-600">Terjual 100+</p>
-                <button class="text-red-500 hover:text-red-600">
-                    <i class="fas fa-heart text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-
-        <!-- Nama Produk -->
-        <div class="px-4 py-2">
-            <h2 class="text-lg font-bold text-gray-800">Nama Produk</h2>
-        </div>
-
+    <!-- Produk Section -->
+    <div id="product-container" class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-5">
+        <!-- Content dari JSON akan dimasukkan di sini -->
     </div>
-    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-5">
-        <!-- Penilaian Produk -->
-        <div class="flex items-center px-4 py-2">
-            <div class="flex items-center text-yellow-400">
-                <p class="text-xl text-gray-600">4.0
-                    <i class="fas fa-star"></i>
-                    <span>(200 penilaian)</span>
-                </p>
-            </div>
-        </div>
 
-        <div class="max-w-sm mx-auto bg-white overflow-hidden my-5">
-            <!-- Komentar 1 -->
-            <div class="px-4 py-2">
-                <!-- Nama Pengguna dan Like -->
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="User Image">
-                        <p class="ml-4 text-gray-800 font-semibold">Nama Pengguna</p>
-                    </div>
-                    <!-- Like Button with Count -->
-                    <div class="flex items-center space-x-4">
-                        <p class="text-sm text-gray-600">Membantu (<span id="like-count">10</span>) </p>
-                        <button class="text-red-500 hover:text-red-600">
-                            <i class="fas fa-thumbs-up text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- Bintang -->
-                <div class="flex items-center text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <!-- Komentar -->
-                <p class="mt-2 text-gray-700">
-                    Produk ini sangat bagus dan sesuai dengan ekspektasi. Sangat direkomendasikan!
-                </p>
-                <!-- Gambar yang diunggah -->
-                <div class="mt-2">
-                    <img class="w-full h-auto rounded-md" src="https://via.placeholder.com/300" alt="Uploaded Image">
-                </div>
-            </div>
+    <!-- Ulasan Section -->
+    <div id="ulasan-container" class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-5">
+        <!-- Ulasan dari JSON akan dimasukkan di sini -->
+    </div>
 
+    <script>
+        let reviewsToShow = 2;  // Jumlah ulasan yang ditampilkan secara default
+        let currentReviewIndex = 0; // Indeks ulasan saat ini
 
-            <!-- Komentar 2 -->
-            <div class="px-4 py-2">
-                <!-- Nama Pengguna dan Like -->
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="User Image">
-                        <p class="ml-4 text-gray-800 font-semibold">Nama Pengguna</p>
-                    </div>
-                    <!-- Like Button with Count -->
-                    <div class="flex items-center space-x-4">
-                        <p class="text-sm text-gray-600">Membantu (<span id="like-count">10</span>) </p>
-                        <button class="text-red-500 hover:text-red-600">
-                            <i class="fas fa-thumbs-up text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <!-- Bintang -->
-                <div class="flex items-center text-yellow-400">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <!-- Komentar -->
-                <p class="mt-2 text-gray-700">
-                    Produk ini sangat bagus dan sesuai dengan ekspektasi. Sangat direkomendasikan!
-                </p>
-                <!-- Gambar yang diunggah -->
-                <div class="mt-2">
-                    <img class="w-full h-auto rounded-md" src="https://via.placeholder.com/300" alt="Uploaded Image">
-                </div>
-            </div>
+        // Fungsi untuk memuat produk dari file JSON
+        async function loadProduct() {
+            try {
+                const response = await fetch('assets/products-mobile.json');
+                const products = await response.json();
 
-            <!-- Komentar Lainnya (Tersembunyi Awalnya) -->
-            <div id="extra-comments" class="hidden">
-                <!-- Komentar 3 -->
-                <div class="px-4 py-2">
-                    <!-- Nama Pengguna dan Like -->
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="User Image">
-                            <p class="ml-4 text-gray-800 font-semibold">Nama Pengguna</p>
+                // Ambil produk pertama (sesuaikan jika perlu)
+                const product = products[0];
+
+                // Masukkan data produk ke dalam HTML
+                const productContainer = document.getElementById('product-container');
+                productContainer.innerHTML = `
+                    <!-- Gambar Utama -->
+                    <div class="h-50 bg-white-200">
+                        <img id="main-image" src="${product.mainImage}" alt="Main Product Image" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Gambar Varian -->
+                    <div class="flex space-x-2 p-4">
+                        ${product.variants.map(variant => `
+                            <img src="${variant}" alt="Variant Image" class="w-12 h-12 object-cover rounded-md cursor-pointer" onclick="changeMainImage('${variant}')">
+                        `).join('')}
+                    </div>
+
+                    <!-- Harga, Jumlah Penjualan, dan Wishlist -->
+                    <div class="flex justify-between items-center px-4 py-2">
+                        <div>
+                            <p class="text-xl font-bold text-red-500">Rp ${product.price.toLocaleString()}</p>
                         </div>
-                        <!-- Like Button with Count -->
                         <div class="flex items-center space-x-4">
-                            <p class="text-sm text-gray-600">Membantu (<span id="like-count">10</span>) </p>
+                            <p class="text-sm text-gray-600">Terjual ${product.sold}+</p>
                             <button class="text-red-500 hover:text-red-600">
-                                <i class="fas fa-thumbs-up text-xl"></i>
+                                <i class="fas fa-heart text-xl"></i>
                             </button>
                         </div>
                     </div>
-                    <!-- Bintang -->
-                    <div class="flex items-center text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+
+                    <!-- Nama Produk -->
+                    <div class="px-4 py-4">
+                        <h2 class="text-lg font-bold text-gray-800">${product.name}</h2>
                     </div>
-                    <!-- Komentar -->
-                    <p class="mt-2 text-gray-700">
-                        Produk ini sangat bagus dan sesuai dengan ekspektasi. Sangat direkomendasikan!
-                    </p>
-                    <!-- Gambar yang diunggah -->
-                    <div class="mt-2">
-                        <img class="w-full h-auto rounded-md" src="https://via.placeholder.com/300"
-                            alt="Uploaded Image">
+                `;
+
+                // Masukkan ulasan ke dalam HTML
+                const ulasanContainer = document.getElementById('ulasan-container');
+
+                // Tampilkan penilaian produk di luar ulasan
+                ulasanContainer.innerHTML = `
+                <div class="flex items-center px-4 py-2">
+                    <div class="flex items-center text-yellow-400">
+                        ${'<i class="fas fa-star"></i>'.repeat(product.rating)}
+                        ${'<i class="far fa-star"></i>'.repeat(5 - product.rating)}
+                        <p class="ml-2 text-xl text-gray-600">${product.rating} (${product.reviews.length} penilaian)</p>
                     </div>
                 </div>
+                `;
 
-                <!-- Komentar 4 -->
-                <div class="px-4 py-2">
-                    <!-- Nama Pengguna dan Like -->
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="User Image">
-                            <p class="ml-4 text-gray-800 font-semibold">Nama Pengguna</p>
-                        </div>
-                        <!-- Like Button with Count -->
+                // Inisialisasi currentReviewIndex dengan nilai awal
+                currentReviewIndex = reviewsToShow;
 
-                        <div class="flex items-center space-x-4">
-                            <p class="text-sm text-gray-600">Membantu (<span id="like-count">10</span>) </p>
-                            <button class="text-red-500 hover:text-red-600">
-                                <i class="fas fa-thumbs-up text-xl"></i>
-                            </button>
-                        </div>
+                // Tampilkan ulasan pertama
+                renderReviews(product.reviews.slice(0, currentReviewIndex));
+
+                // Tampilkan tombol "View More" jika ulasan lebih dari 2
+                if (product.reviews.length > reviewsToShow) {
+                    ulasanContainer.innerHTML += `
+                    <div class="text-center py-4">
+                        <button id="view-more-button" class="text-red-500 px-4 py-2 rounded-lg" onclick="toggleReviews(${JSON.stringify(product.reviews)})">View More</button>
                     </div>
-                    <!-- Bintang -->
-                    <div class="flex items-center text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <!-- Komentar -->
-                    <p class="mt-2 text-gray-700">
-                        Produk ini sangat bagus dan sesuai dengan ekspektasi. Sangat direkomendasikan!
-                    </p>
-                    <!-- Gambar yang diunggah -->
-                    <div class="mt-2">
-                        <img class="w-full h-auto rounded-md" src="https://via.placeholder.com/300"
-                            alt="Uploaded Image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Link Lihat Semua Komentar -->
-            <div class="px-4 py-2">
-                <a id="view-more" href="#" class="text-blue-500 hover:underline">Lihat Semua Komentar</a>
-            </div>
-        </div>
-
-        <script>
-            document.getElementById("view-more").addEventListener("click", function (event) {
-                event.preventDefault(); // Mencegah aksi default dari tautan
-                var extraComments = document.getElementById("extra-comments");
-                if (extraComments.classList.contains("hidden")) {
-                    extraComments.classList.remove("hidden");
-                    this.textContent = "Sembunyikan Komentar"; // Ubah teks menjadi "Sembunyikan Komentar"
-                } else {
-                    extraComments.classList.add("hidden");
-                    this.textContent = "Lihat Semua Komentar"; // Ubah kembali teks menjadi "Lihat Semua Komentar"
+                    `;
                 }
-            });
-        </script>
-    </div>
+
+            } catch (error) {
+                console.error("Error loading product data:", error);
+            }
+        }
+
+        // Fungsi untuk menampilkan ulasan
+        function renderReviews(reviews) {
+            const ulasanContainer = document.getElementById('ulasan-container');
+
+            // Tambahkan ulasan baru tanpa menghapus ulasan lama
+            ulasanContainer.innerHTML += reviews.map(review => `
+                <div class="px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="User Image">
+                            <p class="ml-4 text-gray-800 font-semibold">${review.user}</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <p class="text-sm text-gray-600">Membantu (<span>${review.helpful}</span>)</p>
+                            <button class="text-red-500 hover:text-red-600">
+                                <i class="fas fa-thumbs-up text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-yellow-400">
+                        ${'<i class="fas fa-star"></i>'.repeat(review.rating)}
+                        ${'<i class="far fa-star"></i>'.repeat(5 - review.rating)}
+                    </div>
+                    <p class="mt-2 text-gray-700">${review.comment}</p>
+                    <div class="mt-2">
+                        <img class="w-full h-auto rounded-md" src="${review.image}" alt="Uploaded Image">
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Fungsi untuk menampilkan ulasan berikutnya
+        function toggleReviews(reviews) {
+            const button = document.getElementById('view-more-button');
+
+            // Jika masih ada ulasan yang belum ditampilkan
+            if (currentReviewIndex < reviews.length) {
+                // Tambah jumlah ulasan yang akan ditampilkan (tampilkan berikutnya sesuai reviewsToShow)
+                const nextReviews = reviews.slice(currentReviewIndex, currentReviewIndex + reviewsToShow);
+                renderReviews(nextReviews);  // Render ulasan berikutnya
+                currentReviewIndex += reviewsToShow;  // Perbarui indeks ulasan
+
+                // Jika semua ulasan sudah ditampilkan, ubah tombol menjadi "View Less"
+                if (currentReviewIndex >= reviews.length) {
+                    button.textContent = 'View Less';
+                }
+            } else {
+                // Kembalikan ke jumlah ulasan default jika "View Less" ditekan
+                currentReviewIndex = reviewsToShow;
+                document.getElementById('ulasan-container').innerHTML = ''; // Bersihkan konten ulasan
+                loadProduct();  // Muat ulang produk dan ulasan awal
+            }
+        }
+
+        // Fungsi untuk mengubah gambar utama berdasarkan varian yang dipilih
+        function changeMainImage(variantSrc) {
+            document.getElementById('main-image').src = variantSrc;
+        }
+
+        // Muat produk saat halaman selesai dimuat
+        window.onload = loadProduct;
+    </script>
 </body>
 
 </html>
