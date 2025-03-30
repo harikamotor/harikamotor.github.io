@@ -1,77 +1,77 @@
 [
-    {
-      "id": 1,
-      "name": "Motorcycle Model A",
-      "price": 5000000,
-      "sold": 100,
-      "rating": 4.0,
-      "reviews": [
-        {
-          "user": "Pengguna 1",
-          "rating": 4,
-          "comment": "Produk ini sangat bagus dan sesuai dengan ekspektasi.",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 2",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 3",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 4",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 5",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 7",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 8",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 9",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        },
-        {
-          "user": "Pengguna 10",
-          "rating": 4,
-          "comment": "Sangat direkomendasikan!",
-          "helpful": 10,
-          "image": "https://via.placeholder.com/300"
-        }
-      ],
-      "mainImage": "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-blue-2-03062024-045618.png",
-      "variants": ["https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-blue-2-03062024-045618.png", "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-green-03062024-045634.png", "https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:w-550,f-auto,pr-true/uploads/product-draft/colors/matte-black-3-03062024-045648.png"]
-    }
+  {
+    "id": 1,
+    "name": "Motorcycle Model A",
+    "price": 5000000,
+    "sold": 100,
+    "rating": 4.0,
+    "reviews": [
+      {
+        "user": "Pengguna 1",
+        "rating": 4,
+        "comment": "Produk ini sangat bagus dan sesuai dengan ekspektasi.",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 2",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 3",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 4",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 5",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 7",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 8",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 9",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      },
+      {
+        "user": "Pengguna 10",
+        "rating": 4,
+        "comment": "Sangat direkomendasikan!",
+        "helpful": 10,
+        "image": "https://www.placehold.co/300"
+      }
+    ],
+    "mainImage": "https://www.placehold.co/300",
+    "variants": ["https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300", "https://www.placehold.co/300"]
+  }
   ]
   
